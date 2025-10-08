@@ -6,9 +6,6 @@ import { Button } from "../../ui/button";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation"
 
-
-
-
 const navlinks = [
     { name: "Home", path: "/" },
     { name: "Course", path: "/course" },
@@ -59,17 +56,6 @@ export default function NavBar() {
                 ))}
               </ul>
               <div className="flex items-center space-x-6">
-                <div className="flex items-center space-x-2">
-                  <Phone className="text-[#2661E9] h-5 w-5" />
-                  <div className="hidden lg:block">
-                    <p className={`text-xs ${isScrolled ? 'text-gray-600' : 'text-white'}`}>
-                      Have any Questions?
-                    </p>
-                    <p className={`text-sm font-semibold ${isScrolled ? 'text-black' : 'text-white'}`}>
-                      (007) 123 456 7890
-                    </p>
-                  </div>
-                </div>
                 <Button
                   onClick={() => handleNavClick('/contact')}
                   className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white transition-colors"
@@ -101,13 +87,6 @@ export default function NavBar() {
                 ))}
               </ul>
               <div className="mt-4 pt-4 border-t border-gray-100">
-                <div className="flex items-center space-x-2 mb-3">
-                  <Phone className="text-[#2661E9] h-5 w-5" />
-                  <div>
-                    <p className="text-xs text-gray-500">Have any Questions?</p>
-                    <p className="text-sm font-semibold">(007) 123 456 7890</p>
-                  </div>
-                </div>
                 <Button
                   onClick={() => handleNavClick('/inventory')}
                   className="w-full bg-[#2661E9] hover:bg-[#1a4bb8] text-white"

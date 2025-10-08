@@ -21,7 +21,7 @@ export function Button ({
     "flex items-center justify-center font-medium transition-colors duration-150";
 
   const variants = {
-    primary: "bg-purple-300 text-white hover:bg-purple-300 rounded-lg",
+    primary: "bg-purple-300 text-white hover:bg-purple-300 rounded-lg active:bg-purple-400",
     secondary:
       "bg-customBlack text-white hover:bg-gray-700 rounded-lg active:bg-gray-800",
     outline:
