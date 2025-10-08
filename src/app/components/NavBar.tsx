@@ -2,7 +2,7 @@
 import path from "path"
 import { Menu, Phone } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { Button } from "../../ui/button";
+import { Button } from "../components/Button";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation"
 
