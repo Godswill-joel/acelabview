@@ -21,11 +21,11 @@ export function Button ({
     "flex items-center justify-center font-medium transition-colors duration-150";
 
   const variants = {
-    primary: "bg-purple-300 text-white hover:bg-purple-300 rounded-lg active:bg-purple-400",
+    primary: "bg-purple-300 text-white hover:bg-purple-300 rounded-full active:bg-purple-400",
     secondary:
       "bg-customBlack text-white hover:bg-gray-700 rounded-lg active:bg-gray-800",
     outline:
-      "border-2 border-slate-700 rounded-lg text-slate-900 hover:bg-slate-50 active:bg-blue-100",
+      "border-2 border-slate-700 rounded-full text-slate-900 hover:bg-slate-50 active:bg-blue-100",
     danger:
       "bg-red-600 text-white hover:bg-red-700 active:bg-red-800 rounded-lg",
     default: "text-gray-900",
