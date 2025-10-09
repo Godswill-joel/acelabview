@@ -1,16 +1,16 @@
 "use client";
 
-import { Button } from "../components/Button";
-import acelab from "../../../public/assets/images/ark.jpeg"
 import Image from "next/image";
+import { Button } from "../components/Button";
+import acelab from "../../../public/assets/images/ark.jpeg";
 
 export default function HomePage() {
   return (
     <main className="relative overflow-hidden bg-white">
       <section className="relative h-[100vh] flex items-center justify-center md:justify-start">
-        <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 ">
           <Image
-            src="/assets/images/ark.jpeg"
+            src={acelab}
             alt="DataForte students learning tech"
             fill
             className="object-cover object-center"
@@ -31,13 +31,13 @@ export default function HomePage() {
               courses at DataForte Academy.
             </p>
 
-            <Button className="bg-[#9B4DFF] hover:bg-[#7a3cd9] text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg transition-all duration-300">
+            <Button variant="primary" size="lg">
               ENROLL NOW
             </Button>
           </div>
         </div>
 
-        {/* SVG Wave */}
+        {/* Bottom SVG curve */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
           <svg
             className="relative block w-[calc(100%+1.3px)] h-[80px] sm:h-[100px] md:h-[120px]"

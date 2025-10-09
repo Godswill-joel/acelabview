@@ -18,12 +18,12 @@ export function Button ({
   ...props
 }: ButtonProps) {
   const baseStyles =
-    "flex items-center justify-center font-medium transition-colors duration-150";
+    "flex items-center justify-center font-medium transition-colors duration-150 rounded-full ";
 
   const variants = {
-    primary: "bg-purple-300 text-white hover:bg-purple-300 rounded-full active:bg-purple-400",
+    primary: "bg-[#2661E9]text-white hover:bg-[#2661E9] rounded-full active:bg-[#9B4DFF]",
     secondary:
-      "bg-customBlack text-white hover:bg-gray-700 rounded-lg active:bg-gray-800",
+      "bg-[#2661E9] text-white hover:bg-gray-700 rounded-lg active:bg-gray-800",
     outline:
       "border-2 border-slate-700 rounded-full text-slate-900 hover:bg-slate-50 active:bg-blue-100",
     danger:
