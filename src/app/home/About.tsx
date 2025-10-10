@@ -8,7 +8,7 @@ export default function AboutSection() {
     <section className="w-full bg-white py-20 px-6 md:px-20">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <h4 className="text-orange-600 font-semibold mb-2 text-lg">Who are We?</h4>
+          <h4 className="text-[#2661E9] font-semibold mb-2 text-lg">Who are We?</h4>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Acelabview Academy
           </h2>

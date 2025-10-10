@@ -13,12 +13,12 @@ export default function HomePage() {
             src={acelab}
             alt="DataForte students learning tech"
             fill
-            className="object-cover object-center"
+            className="object-cover object-center "
             priority
           />
           <div className="absolute inset-0 bg-black/60 md:bg-black/50" />
         </div>
-        <div className="container mx-auto px-6 sm:px-8 md:px-12 lg:px-20 text-center md:text-left text-white">
+        <div className="z-1 container mx-auto px-6 sm:px-8 md:px-12 lg:px-20 text-center md:text-left text-white">
           <div className="max-w-2xl">
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 leading-snug md:leading-tight">
               Your Future in Tech <br />

@@ -28,9 +28,9 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
                     <div>
                         <h2 className="text-2xl font-bold text-[#8B00B9] mb-4">
-                        <Image  
-                       src={acelabview}
-                       alt="acelabview"/>
+                            <Image
+                                src={acelabview}
+                                alt="acelabview" />
                         </h2>
                         <p className="text-gray-300 text-sm leading-relaxed mb-6">
                             At DataForte Academy, our mission is to empower you with the knowledge,
@@ -38,7 +38,6 @@ export default function Footer() {
                             take the first step toward a brighter future.
                         </p>
 
-                        {/* Social Icons */}
                         <div className="flex space-x-4">
                             {socialLinks.map(({ icon: Icon, href }, index) => (
                                 <a

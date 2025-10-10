@@ -10,7 +10,7 @@ export default function CoursesSection() {
       <div className="container mx-auto px-6 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           <div className="lg:col-span-5">
-            <p className="text-[#9B4DFF] font-semibold text-lg mb-4">Our Courses</p>
+            <p className="text-[#2661E9] font-semibold text-lg mb-4">Our Courses</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-slate-900 mb-6">
               Check out the courses we offer
               <br />

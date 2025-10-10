@@ -1,10 +1,11 @@
 import { StaticImageData } from "next/image";
-import cybersecurity from "../../../public/assets/images/features01.jpg";
-import Frontend from "../../../public/assets/images/features02.jpg";
-import DataAnalysis from "../../../public/assets/images/features03 .jpg";
+import { Lock, Send, Award, Users } from "lucide-react";
+import { Layers, Shield, Headphones } from "lucide-react";
 import Devops from "../../../public/assets/images/features04 .jpg";
 import Backend from "../../../public/assets/images/features05 .jpg";
-import { Layers, Shield, Headphones } from "lucide-react";
+import Frontend from "../../../public/assets/images/features02.jpg";
+import cybersecurity from "../../../public/assets/images/features01.jpg";
+import DataAnalysis from "../../../public/assets/images/features03 .jpg";
 
 type Course = {
     id: number;
@@ -54,24 +55,84 @@ export const courses = [
 
 export const values = [
     {
-      title: "Excellence",
-      description:
-        "Delivering world-class education and certifications that meet global industry standards.",
-      icon: Layers,
-      color: "bg-purple-600",
+        title: "Excellence",
+        description:
+            "Delivering world-class education and certifications that meet global industry standards.",
+        icon: Layers,
+        color: "bg-purple-600",
     },
     {
-      title: "Innovation",
-      description:
-        "Staying at the forefront of emerging technologies and learning methodologies.",
-      icon: Shield,
-      color: "bg-pink-400",
+        title: "Innovation",
+        description:
+            "Staying at the forefront of emerging technologies and learning methodologies.",
+        icon: Shield,
+        color: "bg-pink-400",
     },
     {
-      title: "Empowerment",
-      description:
-        "Equipping students with the knowledge and skills to achieve their career goals.",
-      icon: Headphones,
-      color: "bg-blue-500",
+        title: "Empowerment",
+        description:
+            "Equipping students with the knowledge and skills to achieve their career goals.",
+        icon: Headphones,
+        color: "bg-blue-500",
     },
-  ];
+];
+
+export const features = [
+    "Globally Recognized Certifications",
+    "Hands-On Training",
+    "Expert-Led Courses",
+    "Flexible Learning Options",
+    "Career Placement Support",
+    "Cutting-Edge Curriculum",
+    "Lifetime Learning Community",
+    "Master essential methodologies in your program",
+];
+
+export const featuresdata = [
+    {
+        title: "Career Placement",
+        description:
+            "Benefit from our dedicated job placement services and internship to land your dream role.",
+        icon: Lock,
+        color: "bg-purple-600",
+    },
+    {
+        title: "Dedicated Mentorship",
+        description:
+            "Receive guidance and personalized support from experienced mentors throughout your learning journey.",
+        icon: Send,
+        color: "bg-pink-500",
+    },
+    {
+        title: "Globally Recognized Certifications",
+        description:
+            "Earn certifications that are highly valued by employers worldwide.",
+        icon: Award,
+        color: "bg-green-500",
+    },
+    {
+        title: "Lifetime Learning Community",
+        description:
+            "Join a supportive network of peers, alumni, and mentors for ongoing growth and development.",
+        icon: Users,
+        color: "bg-yellow-500",
+    },
+];
+
+export const testimonials = [
+  {
+    name: "Michael",
+    text: "Enrolling in DataForte Academy’s cybersecurity program was a game-changer for my career...",
+    image: "/michael.jpg",
+  },
+  {
+    name: "Fehintola",
+    text: "DataForte Academy exceeded my expectations! The instructors were knowledgeable...",
+    image: "/fehintola.jpg",
+  },
+  {
+    name: "Morris",
+    text: "I was completely new to IT, but DataForte Academy made the learning process seamless...",
+    image: "/morris.jpg",
+  },
+];
