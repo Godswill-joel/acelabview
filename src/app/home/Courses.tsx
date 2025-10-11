@@ -1,137 +1,101 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "../components/Button";
+import { useState } from "react";
 import { courses } from "../data/data";
 
 export default function CoursesSection() {
+  const [search, setSearch] = useState("");
+
+  const filteredCourses = courses.filter((course) =>
+    course.title.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="bg-gray-50 text-gray-900 py-20">
       <div className="container mx-auto px-6 lg:px-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-          <div className="lg:col-span-5">
-            <p className="text-[#2661E9] font-semibold text-lg mb-4">Our Courses</p>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-slate-900 mb-6">
-              Check out the courses we offer
-              <br />
-              at Ace.
+        {/* Header Section */}
+        <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
+          <div>
+            <span className="bg-gray-200 text-gray-700 px-4 py-1 rounded-full text-sm font-semibold tracking-wide">
+              OUR COURSES
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold mt-4">
+              Explore our Best <span className="text-[#2661E9]">Courses</span>
             </h2>
-            <p className="text-slate-500 max-w-md mb-8">
-              Discover industry-focused courses at DataForte Academy, designed to equip you
-              with the skills and certifications to excel in today's job market.
-            </p>
-            <Button variant="secondary" size="md">
-              Learn More
-            </Button>
           </div>
 
-          {/* Right column - top two course cards */}
-          <div className="lg:col-span-7">
-            <div className="max-w-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-              {courses.slice(0, 2).map((course) => (
-                <article
-                  key={course.id}
-                  className="relative bg-white rounded-2xl shadow-lg overflow-hidden"
-                >
-                  <div className="relative h-55 md:h-80 w-full">
-                    <Image
-                      src={course.image}
-                      alt={course.title}
-                      fill
-                      className="object-cover object-center"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                    />
-                  </div>
-
-                  <div className="p-6 pt-4 pb-14">
-                    <h3 className="text-xl font-semibold text-center text-slate-900">
-                      {course.title}
-                    </h3>
-                    <p className="mt-4 text-xl text-slate-500 leading-relaxed text-justify">
-                      {course.description}
-                    </p>
-                  </div>
-
-                  <div className="absolute bottom-0 left-0 w-full h-3 bg-orange-400 rounded-b-2xl" />
-                  <div className="absolute left-1/2 -translate-x-1/2 -bottom-2">
-                    <button
-                      aria-label={`Explore ${course.title}`}
-                      className="w-10 h-10 bg-[#9B4DFF] text-white rounded-full shadow-md flex items-center justify-center hover:scale-105 transform transition-transform duration-200"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-white"
-                      >
-                        <path d="M5 12h14" />
-                        <path d="M12 5l7 7-7 7" />
-                      </svg>
-                    </button>
-                  </div>
-                </article>
-              ))}
-            </div>
+          {/* Search bar */}
+          <div className="flex items-center w-full md:w-[350px] bg-white rounded-full shadow-md border border-gray-200 px-4 py-2 focus-within:ring-2 focus-within:ring-[#2661E9]">
+            <input
+              type="text"
+              placeholder="Search course..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="flex-1 bg-transparent outline-none text-gray-700 placeholder-gray-400 px-2"
+            />
+            <button className="bg-[#2661E9] hover:bg-[#1d4ed8] text-white px-4 py-2 rounded-full transition">
+              Search
+            </button>
           </div>
         </div>
-      </div>
 
-      {/* Remaining courses - full width */}
-      <div className="w-screen bg-gray-50 px-8 lg:px-20 mt-16">
-        <div className="max-w-auto mx-auto grid grid-cols-2 md:grid-cols-3 gap-8">
-          {courses.slice(2).map((course) => (
-            <article
+        {/* Courses Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          {filteredCourses.map((course) => (
+            <div
               key={course.id}
-              className="relative bg-white rounded-2xl shadow-lg overflow-hidden"
+              className="bg-white rounded-3xl overflow-hidden shadow-lg transition-transform transform hover:-translate-y-2"
             >
-              {/* image */}
-              <div className="relative h-44 md:h-62 w-full">
+              {/* Image */}
+              <div className="relative w-full h-56">
                 <Image
                   src={course.image}
                   alt={course.title}
                   fill
-                  className="object-cover object-center"
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover"
                 />
               </div>
-              <div className="p-6 pt-4 pb-14">
-                <h3 className="text-xl font-semibold text-center text-slate-900">
+
+              {/* Card Content */}
+              <div className="p-6">
+                <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
+                  {course.category || "Course Category"}
+                </p>
+                <h3 className="text-lg md:text-xl font-semibold mb-3">
                   {course.title}
                 </h3>
-                <p className="mt-4 text-xl text-slate-500 leading-relaxed text-justify">
-                  {course.description}
-                </p>
+
+                <div className="flex items-center justify-between text-gray-500 text-sm mb-4">
+                  <div className="flex items-center gap-2">
+                    <Image
+                      src={course.instructorImage}
+                      alt={course.instructor}
+                      width={28}
+                      height={28}
+                      className="rounded-full object-cover"
+                    />
+                    <span>{course.instructor}</span>
+                  </div>
+                  <span>{course.sessions} Sessions</span>
+                </div>
+
+                {/* Pricing & Join */}
+                <div className="flex items-center justify-between mt-6">
+                  <div>
+                    <p className="text-lg font-semibold text-gray-900">
+                      ${course.price.toFixed(2)}{" "}
+                      <span className="text-gray-400 line-through text-sm ml-1">
+                        ${course.oldPrice.toFixed(2)}
+                      </span>
+                    </p>
+                  </div>
+                  <button className="px-5 py-2 rounded-full text-sm font-semibold bg-[#2661E9] text-white hover:bg-[#1d4ed8] transition">
+                    Join Course
+                  </button>
+                </div>
               </div>
-              <div className="absolute bottom-0 left-0 w-full h-3 bg-orange-400 rounded-b-2xl" />
-              <div className="absolute left-1/2 -translate-x-1/2 -bottom-2">
-                <button
-                  aria-label={`Explore ${course.title}`}
-                  className="w-10 h-10 bg-[#2661E9] text-white rounded-full shadow-md flex items-center justify-center hover:scale-105 transform transition-transform duration-200"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-white"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="M12 5l7 7-7 7" />
-                  </svg>
-                </button>
-              </div>
-            </article>
+            </div>
           ))}
         </div>
       </div>

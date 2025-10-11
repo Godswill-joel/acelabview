@@ -7,49 +7,75 @@ import Frontend from "../../../public/assets/images/features02.jpg";
 import cybersecurity from "../../../public/assets/images/features01.jpg";
 import DataAnalysis from "../../../public/assets/images/features03 .jpg";
 
-type Course = {
-    id: number;
-    title: string;
-    description: string;
-    image: string | StaticImageData;
-};
 
 
 export const courses = [
+
     {
         id: 1,
-        title: "Cyber Security",
-        description:
-            "Protect your digital assets with our cutting-edge cybersecurity courses. Learn the skills needed to safeguard systems, detect threats, and secure sensitive information in today's interconnected world.",
+        category: "UI/UX Design",
+        title: "User Experience Design Fundamentals",
+        instructor: "Sarah Mitchell",
+        instructorImage: "/instructors/sarah.jpg",
+        sessions: 16,
+        price: 19,
+        oldPrice: 26,
         image: cybersecurity,
     },
     {
         id: 2,
-        title: "Frontend Development",
-        description:
-            "Master the art of creating stunning, user-friendly websites and applications. Learn essential skills in HTML, CSS, JavaScript, and modern frameworks to build responsive and interactive digital experiences.",
-        image: Frontend,
-    },
-    {
-        id: 3,
-        title: "Data Analysis",
-        description:
-            "Unlock the power of data with our comprehensive Data Analysis courses. Gain skills in data visualization, statistical analysis, and tools like Excel, Python, and SQL to make informed decisions and drive business success.",
+        category: "Graphic Design",
+        title: "Introduction to Graphic Design",
+        instructor: "Liam Garcia",
+        instructorImage: "/instructors/liam.jpg",
+        sessions: 12,
+        price: 30,
+        oldPrice: 35,
         image: DataAnalysis,
     },
     {
+        id: 3,
+        category: "Web Development",
+        title: "Frontend Web Development Bootcamp",
+        instructor: "Emma Wilson",
+        instructorImage: "/instructors/emma.jpg",
+        sessions: 20,
+        price: 30,
+        oldPrice: 45,
+        image: Frontend,
+    },
+    {
         id: 4,
-        title: "Dev/ops & cloud ",
-        description:
-            "Learn data analysis, visualization and machine learning techniques to turn raw data into actionable insights that drive business decisions.",
-        image: Devops,
+        category: "cybersecurity",
+        title: "cybersecurity Bootcamp",
+        instructor: "Emma Wilson",
+        instructorImage: "/instructors/emma.jpg",
+        sessions: 20,
+        price: 30,
+        oldPrice: 45,
+        image: Backend,
     },
     {
         id: 5,
-        title: "Backend Development",
-        description:
-            "Learn data analysis, visualization and machine learning techniques to turn raw data into actionable insights that drive business decisions.",
-        image: Backend,
+        category: "Dev/ops & cloud",
+        title: "Frontend Web Development Bootcamp",
+        instructor: "Emma Wilson",
+        instructorImage: "/instructors/emma.jpg",
+        sessions: 20,
+        price: 30,
+        oldPrice: 45,
+        image: Devops,
+    },
+    {
+        id: 6,
+        category: "Data Analysis",
+        title: "Data analysis Bootcamp",
+        instructor: "Emma Wilson",
+        instructorImage: "/instructors/emma.jpg",
+        sessions: 20,
+        price: 30,
+        oldPrice: 45,
+        image: cybersecurity,
     },
 ];
 
@@ -120,19 +146,19 @@ export const featuresdata = [
 ];
 
 export const testimonials = [
-  {
-    name: "Michael",
-    text: "Enrolling in DataForte Academy’s cybersecurity program was a game-changer for my career...",
-    image: "/michael.jpg",
-  },
-  {
-    name: "Fehintola",
-    text: "DataForte Academy exceeded my expectations! The instructors were knowledgeable...",
-    image: "/fehintola.jpg",
-  },
-  {
-    name: "Morris",
-    text: "I was completely new to IT, but DataForte Academy made the learning process seamless...",
-    image: "/morris.jpg",
-  },
+    {
+        name: "Michael",
+        text: "Enrolling in DataForte Academy’s cybersecurity program was a game-changer for my career...",
+        image: "/michael.jpg",
+    },
+    {
+        name: "Fehintola",
+        text: "DataForte Academy exceeded my expectations! The instructors were knowledgeable...",
+        image: "/fehintola.jpg",
+    },
+    {
+        name: "Morris",
+        text: "I was completely new to IT, but DataForte Academy made the learning process seamless...",
+        image: "/morris.jpg",
+    },
 ];

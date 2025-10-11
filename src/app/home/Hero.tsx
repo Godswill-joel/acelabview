@@ -22,7 +22,7 @@ export default function HomePage() {
           <div className="max-w-2xl">
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 leading-snug md:leading-tight">
               Your Future in Tech <br />
-              <span className="text-[#9B4DFF]">Starts Here</span>
+              <span className="text-[#2661E9]">Starts Here</span>
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-8">
@@ -31,7 +31,7 @@ export default function HomePage() {
               courses at DataForte Academy.
             </p>
 
-            <Button variant="primary" size="lg">
+            <Button variant="secondary" size="lg">
               ENROLL NOW
             </Button>
           </div>
