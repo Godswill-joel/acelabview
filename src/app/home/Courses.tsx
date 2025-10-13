@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { courses } from "../data/data";
+import { Button } from "../components/Button";
 
 export default function CoursesSection() {
   const [search, setSearch] = useState("");
@@ -14,7 +15,7 @@ export default function CoursesSection() {
   return (
     <section className="bg-gray-50 text-gray-900 py-20">
       <div className="container mx-auto px-6 lg:px-20">
-        {/* Header Section */}
+        
         <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
           <div>
             <span className="bg-gray-200 text-gray-700 px-4 py-1 rounded-full text-sm font-semibold tracking-wide">
@@ -77,22 +78,22 @@ export default function CoursesSection() {
                     />
                     <span>{course.instructor}</span>
                   </div>
-                  <span>{course.sessions} Sessions</span>
+                  <span>{course.months} months</span>
                 </div>
 
                 {/* Pricing & Join */}
                 <div className="flex items-center justify-between mt-6">
                   <div>
-                    <p className="text-lg font-semibold text-gray-900">
+                    <p className="text-lg font-semibold text-black-100">
                       ${course.price.toFixed(2)}{" "}
-                      <span className="text-gray-400 line-through text-sm ml-1">
+                      <span className="text-balck-100 line-through text-sm ml-1">
                         ${course.oldPrice.toFixed(2)}
                       </span>
                     </p>
                   </div>
-                  <button className="px-5 py-2 rounded-full text-sm font-semibold bg-[#2661E9] text-white hover:bg-[#1d4ed8] transition">
+                  <Button className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold  transition-colors">
                     Join Course
-                  </button>
+                  </Button>
                 </div>
               </div>
             </div>

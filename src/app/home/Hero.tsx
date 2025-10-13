@@ -28,7 +28,7 @@ export default function HomePage() {
             <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-8">
               Gain in-demand skills, earn globally recognized certifications,
               and secure your future with hands-on training and expert-led
-              courses at DataForte Academy.
+              courses at Acelabview  Academy.
             </p>
 
             <Button variant="secondary" size="lg">

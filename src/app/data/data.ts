@@ -1,11 +1,15 @@
 import { StaticImageData } from "next/image";
 import { Lock, Send, Award, Users } from "lucide-react";
 import { Layers, Shield, Headphones } from "lucide-react";
+import blog1 from "../../../public/assets/images/blog1.webp";
+import blog2 from "../../../public/assets/images/blog2.webp";
+import blog3 from "../../../public/assets/images/blog7.webp";
+import blog4 from "../../../public/assets/images/blog4.webp";
 import Devops from "../../../public/assets/images/features04 .jpg";
 import Backend from "../../../public/assets/images/features05 .jpg";
 import Frontend from "../../../public/assets/images/features02.jpg";
-import cybersecurity from "../../../public/assets/images/features01.jpg";
 import DataAnalysis from "../../../public/assets/images/features03 .jpg";
+import cybersecurity from "../../../public/assets/images/features01.jpg";
 
 
 
@@ -17,9 +21,9 @@ export const courses = [
         title: "User Experience Design Fundamentals",
         instructor: "Sarah Mitchell",
         instructorImage: "/instructors/sarah.jpg",
-        sessions: 16,
-        price: 19,
-        oldPrice: 26,
+        months: 6,
+        price: 300,
+        oldPrice: 500,
         image: cybersecurity,
     },
     {
@@ -28,9 +32,9 @@ export const courses = [
         title: "Introduction to Graphic Design",
         instructor: "Liam Garcia",
         instructorImage: "/instructors/liam.jpg",
-        sessions: 12,
-        price: 30,
-        oldPrice: 35,
+        months: 6,
+        price: 300,
+        oldPrice: 500,
         image: DataAnalysis,
     },
     {
@@ -39,9 +43,9 @@ export const courses = [
         title: "Frontend Web Development Bootcamp",
         instructor: "Emma Wilson",
         instructorImage: "/instructors/emma.jpg",
-        sessions: 20,
-        price: 30,
-        oldPrice: 45,
+        months: 6,
+        price: 300,
+        oldPrice: 500,
         image: Frontend,
     },
     {
@@ -50,9 +54,9 @@ export const courses = [
         title: "cybersecurity Bootcamp",
         instructor: "Emma Wilson",
         instructorImage: "/instructors/emma.jpg",
-        sessions: 20,
-        price: 30,
-        oldPrice: 45,
+        months: 6,
+        price: 300,
+        oldPrice: 500,
         image: Backend,
     },
     {
@@ -61,9 +65,9 @@ export const courses = [
         title: "Frontend Web Development Bootcamp",
         instructor: "Emma Wilson",
         instructorImage: "/instructors/emma.jpg",
-        sessions: 20,
-        price: 30,
-        oldPrice: 45,
+        months: 6,
+        price: 300,
+        oldPrice: 500,
         image: Devops,
     },
     {
@@ -72,9 +76,9 @@ export const courses = [
         title: "Data analysis Bootcamp",
         instructor: "Emma Wilson",
         instructorImage: "/instructors/emma.jpg",
-        sessions: 20,
-        price: 30,
-        oldPrice: 45,
+        months: 6,
+        price: 300,
+        oldPrice: 500,
         image: cybersecurity,
     },
 ];
@@ -161,4 +165,48 @@ export const testimonials = [
         text: "I was completely new to IT, but DataForte Academy made the learning process seamless...",
         image: "/morris.jpg",
     },
+];
+
+export const blogs = [
+  {
+    id: 1,
+    title: "5 Simple Ways to Stay Motivated While Learning Online",
+    date: "Oct 11, 2025",
+    author: "Admin",
+    tag: "Motivation",
+    description:
+      "Discover easy strategies to keep your motivation high while studying online and stay consistent with your goals.",
+    image: blog1,
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "How to Create Effective Study Schedules for Online Courses",
+    date: "Oct 08, 2025",
+    author: "Admin",
+    tag: "Study Tips",
+    description:
+      "Learn the art of organizing your online classes, assignments, and breaks efficiently.",
+    image: blog2,
+  },
+  {
+    id: 3,
+    title: "Top 10 Online Resources for Self-Directed Learners",
+    date: "Oct 08, 2025",
+    author: "Admin",
+    tag: "Online Learning",
+    description:
+      "Explore top websites and tools that make self-learning effective and engaging.",
+    image: blog3,
+  },
+  {
+    id: 4,
+    title: "Balancing Work and Study: Tips for Busy Professionals",
+    date: "Oct 08, 2025",
+    author: "Admin",
+    tag: "Productivity",
+    description:
+      "Manage your time and energy efficiently while working and studying online.",
+    image: blog4,
+  },
 ];

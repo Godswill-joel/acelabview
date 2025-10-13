@@ -5,15 +5,14 @@ import Link from "next/link";
 import { useState } from "react";
 import { courses } from "../data/data";
 import NavBar from "../components/NavBar";
+import { Button } from "../components/Button";
 
 export default function CoursesPage() {
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  // Get unique categories
   const categories = ["All", ...new Set(courses.map((c) => c.category))];
 
-  // Filtered courses
   const filteredCourses = courses.filter(
     (course) =>
       (selectedCategory === "All" || course.category === selectedCategory) &&
@@ -27,7 +26,7 @@ export default function CoursesPage() {
         <div className="absolute inset-0">
           <Image
             src="/assets/images/hero-bg.jpg"
-            alt="Courses Hero"
+            alt="Courses"
             fill
             className="object-cover opacity-30"
           />
@@ -43,7 +42,7 @@ export default function CoursesPage() {
         </div>
       </section>
 
-      {/* ================= COURSE FILTERS ================= */}
+      {/* course filter */}
       <section className="container mx-auto px-6 lg:px-20 py-16">
         <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
           {/* Category filter buttons */}
@@ -52,11 +51,10 @@ export default function CoursesPage() {
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-4 py-2 rounded-full text-sm font-medium border transition-all ${
-                  selectedCategory === cat
+                className={`px-4 py-2 rounded-full text-sm font-medium border transition-all ${selectedCategory === cat
                     ? "bg-[#2661E9] text-white border-[#2661E9]"
                     : "bg-white text-gray-700 border-gray-200 hover:bg-[#2661E9] hover:text-white"
-                }`}
+                  }`}
               >
                 {cat}
               </button>
@@ -78,65 +76,69 @@ export default function CoursesPage() {
           </div>
         </div>
 
-        {/* ================= COURSE GRID ================= */}
+        {/* COURSE GRID */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {filteredCourses.map((course) => (
             <div
               key={course.id}
-              className="bg-white rounded-3xl overflow-hidden shadow-lg transition-transform transform hover:-translate-y-2"
+              className="relative text-black rounded-3xl overflow-hidden shadow-lg w-full transition-transform transform hover:-translate-y-2"
             >
-              {/* Image */}
-              <div className="relative w-full h-56">
+              {/* Course Image */}
+              <div className="relative">
                 <Image
                   src={course.image}
                   alt={course.title}
-                  fill
-                  className="object-cover"
+                  width={600}
+                  height={400}
+                  className="w-full h-56 object-cover"
                 />
               </div>
 
-              {/* Card Content */}
-              <div className="p-6">
-                <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-                  {course.category || "Course Category"}
-                </p>
-                <h3 className="text-lg md:text-xl font-semibold mb-3">
-                  {course.title}
-                </h3>
+              {/* Course Content */}
+              <div className="p-6 space-y-4 relative z-10">
+                <div>
+                  <p className="text-xs uppercase text-black tracking-wider">
+                    {course.category || "Course Category"}
+                  </p>
+                  <h2 className="text-xl font-semibold mt-1">
+                    {course.title}
+                  </h2>
+                </div>
 
-                <div className="flex items-center justify-between text-gray-500 text-sm mb-4">
+                <div className="flex items-center justify-between text-sm text-black-100">
                   <div className="flex items-center gap-2">
                     <Image
                       src={course.instructorImage}
                       alt={course.instructor}
-                      width={28}
-                      height={28}
+                      width={32}
+                      height={32}
                       className="rounded-full object-cover"
                     />
                     <span>{course.instructor}</span>
                   </div>
-                  <span>{course.sessions} Sessions</span>
+                  <span>{course.months}Months</span>
                 </div>
 
-                {/* Pricing & Join */}
-                <div className="flex items-center justify-between mt-6">
+                <div className="flex items-center justify-between pt-3">
                   <div>
-                    <p className="text-lg font-semibold text-gray-900">
-                      ${course.price.toFixed(2)}{" "}
-                      <span className="text-gray-400 line-through text-sm ml-1">
-                        ${course.oldPrice.toFixed(2)}
-                      </span>
+                    <p className="text-lg font-semibold text-black-100">
+                      N{course.price.toFixed(2)}
+                    </p>
+                    <p className="text-sm text-black-100 line-through">
+                      ${course.oldPrice.toFixed(2)}
                     </p>
                   </div>
 
-                  {/* Link to Contact Page */}
                   <Link href="/contact">
-                    <button className="px-5 py-2 rounded-full text-sm font-semibold bg-[#2661E9] text-white hover:bg-[#1d4ed8] transition">
+                    <Button className="bg-[#2661E9] ml-8 hover:bg-[#1a4bb8] text-white font-bold  transition-colors" >
                       Join Course
-                    </button>
+                    </Button>
                   </Link>
                 </div>
               </div>
+
+              {/* Cutout Shape */}
+              <div className="absolute bottom-0 right-0 w-[130px] h-[80px] bg-gray-300 rounded-tl-[50px]" />
             </div>
           ))}
         </div>
@@ -149,7 +151,7 @@ export default function CoursesPage() {
         )}
       </section>
 
-      {/* ================= CALL TO ACTION ================= */}
+      {/* CALL TO ACTION */}
       <section className="bg-[#2661E9] text-white py-20 text-center">
         <div className="container mx-auto px-6 lg:px-20">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
