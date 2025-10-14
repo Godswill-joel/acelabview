@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 "use client";
 
 import Image from "next/image";
@@ -5,7 +7,7 @@ import emailjs from "emailjs-com";
 import { useRef, useState } from "react";
 import { selection } from "@/app/data/data";
 import { Button } from "@/app/components/Button";
-import { Pop, Float, SlideUp } from "@/app/style/animation";
+import { Pop, Float } from "@/app/style/animation";
 import hero from "../../../public/assets/images/WhatsApp Image 2025-10-14 at 15.12.37.jpeg";
 import { FaPhone, FaSpinner, FaEnvelope, FaWhatsapp, FaFacebookF, FaInstagram, FaLocationDot, FaLinkedinIn, FaSquareXTwitter } from "react-icons/fa6";
 
@@ -106,7 +108,7 @@ export default function Page() {
               Contact <span className="text-[#2661E9] bg-gradient-to-r from-[#2661E9] to-[#3b82f6] bg-clip-text text-transparent">Us</span>
             </h1>
             <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-100 leading-relaxed"> {/* Changed to gray-100 for better contrast */}
-              Ready to start your journey? We're here to answer all your questions and help you take the next step.
+              Ready to start your journey? We&apos;re here to answer all your questions and help you take the next step.
             </p>
           </Float>
         </div>
@@ -121,7 +123,7 @@ export default function Page() {
                     Get In Touch
                   </h2>
                   <p className="text-gray-600 text-lg max-w-md">
-                    Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                    Have questions? We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
                   </p>
                 </div>
                 
@@ -188,7 +190,7 @@ export default function Page() {
                     Send Us a Message
                   </h3>
                   <p className="text-gray-600">
-                    Fill out the form below and we'll get back to you shortly
+                    Fill out the form below and we&apos;ll get back to you shortly
                   </p>
                 </div>
 
@@ -260,7 +262,7 @@ export default function Page() {
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                         </svg>
-                        Message sent successfully! We'll get back to you soon.
+                        Message sent successfully! We&apos;ll get back to you soon.
                       </div>
                     </div>
                   </Pop>

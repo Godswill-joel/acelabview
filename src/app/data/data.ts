@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import { Lock, Send, Award, Users } from "lucide-react";
 import { Layers, Shield, Headphones } from "lucide-react";
 import blog1 from "../../../public/assets/images/blog1.webp";

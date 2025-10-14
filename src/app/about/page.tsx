@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import NavBar from "../components/NavBar";
-import { Pop, Float, SlideUp } from "@/app/style/animation";
+import { Float  } from "@/app/style/animation";
 import hero from "../../../public/assets/images/WhatsApp Image 2025-10-14 at 15.12.37.jpeg";
 
 export default function About() {

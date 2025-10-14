@@ -1,6 +1,6 @@
 "use client"
-import path from "path"
-import { Menu, Phone } from "lucide-react";
+
+import { Menu  } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { Button } from "../components/Button";
 import { useEffect, useState } from "react";

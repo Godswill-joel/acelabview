@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useState } from "react";
 import { blogs } from "../data/data";
 import { Button } from "../components/Button";
-import { Pop, Float, SlideUp } from "@/app/style/animation";
 import { Calendar, User, ArrowUpRight } from "lucide-react";
 import hero from "../../../public/assets/images/WhatsApp Image 2025-10-14 at 15.12.37.jpeg";
 

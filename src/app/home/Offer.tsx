@@ -23,7 +23,7 @@ export default function ExpectSection() {
             <span className="block">expect when you join us:</span>
           </h2>
           <p className="text-gray-600 mt-6 max-w-xl leading-relaxed">
-            Whether you're starting your journey or looking to advance your
+            Whether you&apos;re starting your journey or looking to advance your
             career, DataForte Academy is here to guide you every step of the way.
           </p>
           <ul className="mt-8 space-y-4">

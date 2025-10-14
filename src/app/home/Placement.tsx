@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 import { featuresdata } from "../data/data";
 import bgImage from "../../../public/assets/images/computer-program-coding-screen.jpg";
 
