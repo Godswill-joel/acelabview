@@ -8,8 +8,9 @@ import blog4 from "../../../public/assets/images/blog4.webp";
 import Devops from "../../../public/assets/images/features04 .jpg";
 import Backend from "../../../public/assets/images/features05 .jpg";
 import Frontend from "../../../public/assets/images/features02.jpg";
+import graphics from "../../../public/assets/images/features01.jpg";
 import DataAnalysis from "../../../public/assets/images/features03 .jpg";
-import cybersecurity from "../../../public/assets/images/features01.jpg";
+import cybersecurity from "../../../public/assets/images/Backend.webp";
 
 
 
@@ -24,7 +25,7 @@ export const courses = [
         months: 6,
         price: 300,
         oldPrice: 500,
-        image: cybersecurity,
+        image: graphics,
     },
     {
         id: 2,
@@ -57,7 +58,7 @@ export const courses = [
         months: 6,
         price: 300,
         oldPrice: 500,
-        image: Backend,
+        image: cybersecurity,
     },
     {
         id: 5,
@@ -79,7 +80,7 @@ export const courses = [
         months: 6,
         price: 300,
         oldPrice: 500,
-        image: cybersecurity,
+        image: Backend,
     },
 ];
 
@@ -210,3 +211,16 @@ export const blogs = [
     image: blog4,
   },
 ];
+
+export const selection = [
+    "Web Development",
+    "Data Science",
+    "UI/UX Design",
+    "Cybersecurity",
+    "Mobile App Development",
+    "Cloud Computing",
+    "Graphics Design",
+    "Digital Marketing",
+    "Software Engineering",
+];
+  
