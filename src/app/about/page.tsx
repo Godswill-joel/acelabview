@@ -2,27 +2,34 @@
 
 import Image from "next/image";
 import NavBar from "../components/NavBar";
+import { Pop, Float, SlideUp } from "@/app/style/animation";
+import hero from "../../../public/assets/images/WhatsApp Image 2025-10-14 at 15.12.37.jpeg";
 
 export default function About() {
   return (
     <main className="bg-gray-50 text-gray-900">
       <NavBar />
-      <section className="relative h-[60vh] flex items-center justify-center text-center bg-gradient-to-b from-[#0a0a0a] via-[#141414] to-[#1c1c1c] text-white overflow-hidden">
+      <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center text-center bg-gradient-to-br from-[#0a0a0a] via-[#141414] to-[#1c1c1c] text-white overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/hero-bg.jpg"
-            alt="about Hero"
+            src={hero}
+            alt="Contact Hero"
             fill
-            className="object-cover opacity-30"
+            className="object-cover opacity-60"
+            priority
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
         </div>
-        <div className="relative z-10 px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            All About <span className="text-[#2661E9]">Us</span>
-          </h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-300">
-            Know everthing about our institute and our achievements 
-          </p>
+
+        <div className="relative z-10 px-4 max-w-4xl mx-auto">
+          <Float>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
+              All About<span className="text-[#2661E9] bg-gradient-to-r from-[#2661E9] to-[#3b82f6] bg-clip-text text-transparent">Us</span>
+            </h1>
+            <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-100 leading-relaxed"> {/* Changed to gray-100 for better contrast */}
+              Know everthing about our institute and our achievements
+            </p>
+          </Float>
         </div>
       </section>
 
@@ -41,8 +48,6 @@ export default function About() {
             5-+ INSTRUCTORS
           </div>
         </div>
-
-        {/* Right - Text */}
         <div>
           <p className="text-sm font-semibold text-[#9eff00] uppercase mb-3">
             About Cerdas

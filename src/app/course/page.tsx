@@ -6,6 +6,8 @@ import { useState } from "react";
 import { courses } from "../data/data";
 import NavBar from "../components/NavBar";
 import { Button } from "../components/Button";
+import { Pop, Float, SlideUp } from "@/app/style/animation";
+import hero from "../../../public/assets/images/WhatsApp Image 2025-10-14 at 15.12.37.jpeg";
 
 export default function CoursesPage() {
   const [search, setSearch] = useState("");
@@ -22,26 +24,31 @@ export default function CoursesPage() {
   return (
     <main className="bg-gray-50 text-gray-900">
       <NavBar />
-      <section className="relative h-[60vh] flex items-center justify-center text-center bg-gradient-to-b from-[#0a0a0a] via-[#141414] to-[#1c1c1c] text-white overflow-hidden">
+      {/* HERO SECTION */}
+      <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center text-center bg-gradient-to-br from-[#0a0a0a] via-[#141414] to-[#1c1c1c] text-white overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/hero-bg.jpg"
-            alt="Courses"
+            src={hero}
+            alt="Contact Hero"
             fill
-            className="object-cover opacity-30"
+            className="object-cover opacity-60"
+            priority
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div> {/* Reduced darkness overlay */}
         </div>
-        <div className="relative z-10 px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            Explore Our <span className="text-[#2661E9]">Courses</span>
-          </h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-300">
-            Learn from industry experts and gain practical skills to shape your
-            future.
-          </p>
+
+        <div className="relative z-10 px-4 max-w-4xl mx-auto">
+          <Float>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
+              Explore Our<span className="text-[#2661E9] bg-gradient-to-r from-[#2661E9] to-[#3b82f6] bg-clip-text text-transparent">Courses</span>
+            </h1>
+            <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-100 leading-relaxed"> {/* Changed to gray-100 for better contrast */}
+              Learn from industry experts and gain practical skills to shape your
+              future.
+            </p>
+          </Float>
         </div>
       </section>
-
       {/* course filter */}
       <section className="container mx-auto px-6 lg:px-20 py-16">
         <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
@@ -52,8 +59,8 @@ export default function CoursesPage() {
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-4 py-2 rounded-full text-sm font-medium border transition-all ${selectedCategory === cat
-                    ? "bg-[#2661E9] text-white border-[#2661E9]"
-                    : "bg-white text-gray-700 border-gray-200 hover:bg-[#2661E9] hover:text-white"
+                  ? "bg-[#2661E9] text-white border-[#2661E9]"
+                  : "bg-white text-gray-700 border-gray-200 hover:bg-[#2661E9] hover:text-white"
                   }`}
               >
                 {cat}

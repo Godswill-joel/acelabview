@@ -2,8 +2,10 @@
 import Image from "next/image";
 import { useState } from "react";
 import { blogs } from "../data/data";
-import { Calendar, User, ArrowUpRight } from "lucide-react";
 import { Button } from "../components/Button";
+import { Pop, Float, SlideUp } from "@/app/style/animation";
+import { Calendar, User, ArrowUpRight } from "lucide-react";
+import hero from "../../../public/assets/images/WhatsApp Image 2025-10-14 at 15.12.37.jpeg";
 
 export default function BlogPage() {
   const [email, setEmail] = useState("");
@@ -18,16 +20,16 @@ export default function BlogPage() {
     <div className="min-h-screen bg-white text-gray-800">
       {/* 🔹 Subscribe Section */}
       <section className="relative h-[60vh] flex flex-col items-center justify-center text-center bg-gradient-to-b from-[#0a0a0a] via-[#141414] to-[#1c1c1c] text-white overflow-hidden">
-        {/* Background image (same style as Courses hero) */}
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/hero-bg.jpg"
-            alt="Blog"
+            src={hero}
+            alt="Contact Hero"
             fill
-            className="object-cover opacity-30"
+            className="object-cover opacity-60"
+            priority
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div> {/* Reduced darkness overlay */}
         </div>
-
         {/* Content */}
         <div className="relative z-10 px-4 max-w-2xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
@@ -44,7 +46,7 @@ export default function BlogPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email address"
-              className="w-full md:w-2/3 px-4 py-3 rounded-lg text-gray-900 focus:outline-none border border-gray-300 focus:border-blue-500"
+              className="w-full bg-white md:w-2/3 px-4 py-3 rounded-lg text-gray-900 focus:outline-none border border-gray-300 focus:border-blue-500"
             />
             <Button
               onClick={handleSubscribe}
