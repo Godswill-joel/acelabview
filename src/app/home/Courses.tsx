@@ -19,7 +19,7 @@ export default function CoursesSection() {
 
         <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
           <div>
-            <span className="bg-gray-200 text-gray-700 px-4 py-1 rounded-full text-sm font-semibold tracking-wide">
+            <span className="bg-gray-200 text-gray-700 px-4 py-1 rounded-full text-xl font-semibold tracking-wide">
               OUR COURSES
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mt-4">

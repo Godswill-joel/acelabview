@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { courses } from "../data/data";
 import NavBar from "../components/NavBar";
+import { useRouter } from "next/navigation";
 import { Button } from "../components/Button";
 import { Float } from "@/app/style/animation";
 import hero from "../../../public/assets/images/WhatsApp Image 2025-10-14 at 15.12.37.jpeg";
@@ -12,6 +13,7 @@ import hero from "../../../public/assets/images/WhatsApp Image 2025-10-14 at 15.
 export default function CoursesPage() {
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const router = useRouter();
 
   const categories = ["All", ...new Set(courses.map((c) => c.category))];
 
@@ -28,7 +30,7 @@ export default function CoursesPage() {
         <div className="absolute inset-0">
           <Image
             src={hero}
-            alt="Contact Hero"
+            alt="Course Hero"
             fill
             className="object-cover opacity-60"
             priority
@@ -67,7 +69,7 @@ export default function CoursesPage() {
             ))}
           </div>
 
-         
+
           <div className="flex items-center w-full md:w-[350px] bg-white rounded-full shadow-md border border-gray-200 px-4 py-2 focus-within:ring-2 focus-within:ring-[#2661E9]">
             <input
               type="text"
@@ -118,7 +120,7 @@ export default function CoursesPage() {
                     />
                     <span>{course.instructor}</span>
                   </div>
-                  <span>{course.months}Months</span>
+                  <span>{course.months} Months</span>
                 </div>
 
                 <div className="flex items-center justify-between pt-3">
@@ -131,11 +133,13 @@ export default function CoursesPage() {
                     </p>
                   </div>
 
-                  <Link href="/contact">
-                    <Button className="bg-[#2661E9] ml-8 hover:bg-[#1a4bb8] text-white font-bold  transition-colors" >
-                      Join Course
-                    </Button>
-                  </Link>
+                  <Button className="bg-[#2661E9] ml-8 hover:bg-[#1a4bb8] text-white font-bold  transition-colors"
+                    onClick={() =>
+                      router.push(`/contact?course=${encodeURIComponent(course.title)}`)
+                    }>
+                    Join Course
+                  </Button>
+
                 </div>
               </div>
 

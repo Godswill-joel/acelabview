@@ -15,7 +15,7 @@ export default function ExpectSection() {
         {/* Left Content */}
         <div className="w-screen md:w-1/2">
           {/* Section Header */}
-          <p className="text-[#2661E9] font-semibold mb-4 text-2xl">
+          <p className="text-[#2661E9] font-semibold mb-4 text-4xl">
             What We Offer to Our Students
           </p>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
@@ -38,7 +38,7 @@ export default function ExpectSection() {
               </li>
             ))}
           </ul>
-          <Button variant="secondary" size="md" className="mt-8">
+          <Button className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold  transition-colors mt-8" size="md" >
             Learn More
           </Button>
         </div>

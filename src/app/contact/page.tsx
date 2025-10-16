@@ -4,7 +4,7 @@
 
 import Image from "next/image";
 import emailjs from "emailjs-com";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { selection } from "@/app/data/data";
 import { Button } from "@/app/components/Button";
 import { useSearchParams } from "next/navigation";
@@ -52,8 +52,9 @@ export default function Page() {
   const [loading, setLoading] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
-  const searchParams = useSearchParams(); 
-  const preselectedCourse = searchParams.get("course") || ""; 
+  const searchParams = useSearchParams();
+  const preselectedCourse = searchParams.get("course") || "";
+  const [selectedCourse, setSelectedCourse] = useState("");
 
   const handleSend = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -84,6 +85,15 @@ export default function Page() {
     }
   };
 
+  useEffect(() => {
+    console.log("URL COURSE PARAMETER", preselectedCourse);
+    console.log("Available Courses:", selection);
+    console.log("Selected Course State:", selectedCourse);
+    if (preselectedCourse) {
+      setSelectedCourse(preselectedCourse);
+    }
+  }, [preselectedCourse]);
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900">
       {/* HERO SECTION - Reduced darkness */}
@@ -93,7 +103,7 @@ export default function Page() {
             src={hero}
             alt="Contact Hero"
             fill
-            className="object-cover opacity-60" 
+            className="object-cover opacity-60"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div> {/* Reduced darkness overlay */}
@@ -123,11 +133,11 @@ export default function Page() {
                     Have questions? We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
                   </p>
                 </div>
-                
+
                 <div className="space-y-6">
                   {contacts.map(({ id, icons: Icon, text }) => (
-                    <div 
-                      key={id} 
+                    <div
+                      key={id}
                       className="flex items-start gap-4 p-4 rounded-xl bg-white/80 backdrop-blur-sm border border-gray-200/50 shadow-sm hover:shadow-md transition-all duration-300 hover:border-[#2661E9]/20"
                     >
                       <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#2661E9] to-[#3b82f6] rounded-lg flex items-center justify-center">
@@ -147,11 +157,11 @@ export default function Page() {
                     Follow Our Journey
                   </h2>
                 </div>
-                
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   {socials.map(({ id, text }) => (
-                    <div 
-                      key={id} 
+                    <div
+                      key={id}
                       className="text-center p-6 rounded-xl bg-white/80 backdrop-blur-sm border border-gray-200/50 shadow-sm hover:shadow-md transition-all duration-300"
                     >
                       <p className="font-semibold text-gray-800 mb-4 text-sm uppercase tracking-wide">
@@ -196,17 +206,17 @@ export default function Page() {
                     const base = "w-full px-4 py-3 rounded-xl bg-white border border-gray-300 text-gray-800 placeholder-gray-500 resize-none focus:outline-none focus:ring-2 focus:ring-[#2661E9]/50 focus:border-[#2661E9] transition-all duration-300";
                     return (
                       <div key={id} className="space-y-1">
-                        <Tag 
-                          name={id} 
-                          {...props} 
-                          className={base} 
+                        <Tag
+                          name={id}
+                          {...props}
+                          className={base}
                           disabled={loading}
                           required
                         />
                       </div>
                     );
                   })}
-                  
+
                   {/* COURSE DROPDOWN */}
                   <div className="space-y-1">
                     <label
@@ -219,7 +229,8 @@ export default function Page() {
                       id="course"
                       name="course"
                       required
-                      defaultValue={preselectedCourse}
+                      value={selectedCourse}
+                      onChange={(e) => setSelectedCourse(e.target.value)} // ✅ update state
                       className="w-full px-4 py-3 rounded-xl bg-white border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#2661E9]/50 focus:border-[#2661E9] transition-all duration-300"
                       disabled={loading}
                     >
@@ -279,7 +290,7 @@ export default function Page() {
                 Visit us at our conveniently located office in Port Harcourt
               </p>
             </div>
-            
+
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200/50">
               <div className="absolute inset-0 bg-gradient-to-br from-[#2661E9]/10 to-transparent z-10 pointer-events-none"></div>
               <iframe
