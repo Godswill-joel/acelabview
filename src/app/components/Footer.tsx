@@ -33,7 +33,7 @@ export default function Footer() {
                                 alt="acelabview" />
                         </h2>
                         <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                            At DataForte Academy, our mission is to empower you with the knowledge,
+                            At Acelabview Academy, our mission is to empower you with the knowledge,
                             confidence, and credentials to excel in your chosen field. Join us and
                             take the first step toward a brighter future.
                         </p>

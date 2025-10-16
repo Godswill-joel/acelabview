@@ -8,18 +8,16 @@ import back from "../../../public/assets/images/cyber-security-concept-digital-a
 export default function PlacementAndTestimonial() {
   return (
     <div className="w-full">
-      {/* ================= Testimonial Section ================= */}
       <section
         className="relative h-auto bg-fixed bg-center bg-cover py-24"
         style={{ backgroundImage: `url(${back.src})` }}
 
       >
-        {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/30 z-0"></div>
 
         <div className="relative z-10 text-center text-white mb-12">
           <h4 className="text-pink-400 font-medium">Testimonial</h4>
-          <h2 className="text-4xl font-bold mt-2">What Our Students Says</h2>
+          <h2 className="text-4xl font-bold mt-2">What Our Students Say</h2>
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">

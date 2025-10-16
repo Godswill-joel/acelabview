@@ -7,11 +7,12 @@ import emailjs from "emailjs-com";
 import { useRef, useState } from "react";
 import { selection } from "@/app/data/data";
 import { Button } from "@/app/components/Button";
+import { useSearchParams } from "next/navigation";
 import { Pop, Float } from "@/app/style/animation";
 import hero from "../../../public/assets/images/WhatsApp Image 2025-10-14 at 15.12.37.jpeg";
 import { FaPhone, FaSpinner, FaEnvelope, FaWhatsapp, FaFacebookF, FaInstagram, FaLocationDot, FaLinkedinIn, FaSquareXTwitter } from "react-icons/fa6";
 
-type LinkKeys = "club" | "golf";
+type LinkKey = "club";
 
 type Social = { id: string; text: string };
 
@@ -21,7 +22,6 @@ type Field =
 
 const socials: Social[] = [
   { id: "club", text: "Ace Labview" },
-  { id: "golf", text: "The Golf Prince Hotel" },
 ];
 
 const fields: Field[] = [
@@ -38,14 +38,8 @@ const contacts = [
   { id: "address", icons: FaLocationDot, text: "Office: No 2 Orji Close, opposite Da'phantom Arena Off Ada George Road, Port Harcourt" },
 ];
 
-const links: Record<LinkKeys, { icon: any; link: string }[]> = {
+const link: Record<LinkKey, { icon: any; link: string }[]> = {
   club: [
-    { icon: FaFacebookF, link: "https://www.facebook.com/share/v/1YZ9r7MJcq/?mibextid=wwXIfr" },
-    { icon: FaLinkedinIn, link: "https://www.linkedin.com/company/ace-labview-ltd/" },
-    { icon: FaSquareXTwitter, link: "https://x.com/acelabview1?s=11" },
-    { icon: FaInstagram, link: "https://www.instagram.com/acelab_marine?igsh=MWF6OTUwaXlqZWswdg%3D%3D&utm_source=qr" },
-  ],
-  golf: [
     { icon: FaFacebookF, link: "https://www.facebook.com/share/v/1YZ9r7MJcq/?mibextid=wwXIfr" },
     { icon: FaLinkedinIn, link: "https://www.linkedin.com/company/ace-labview-ltd/" },
     { icon: FaSquareXTwitter, link: "https://x.com/acelabview1?s=11" },
@@ -57,6 +51,9 @@ export default function Page() {
   const formRef = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
+
+  const searchParams = useSearchParams(); 
+  const preselectedCourse = searchParams.get("course") || ""; 
 
   const handleSend = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -161,7 +158,7 @@ export default function Page() {
                         {text}
                       </p>
                       <div className="flex justify-center gap-4">
-                        {links[id as LinkKeys].map(({ icon: Icon, link }, index) => (
+                        {link[id as LinkKey].map(({ icon: Icon, link }, index) => (
                           <a
                             key={index}
                             href={link}
@@ -222,6 +219,7 @@ export default function Page() {
                       id="course"
                       name="course"
                       required
+                      defaultValue={preselectedCourse}
                       className="w-full px-4 py-3 rounded-xl bg-white border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#2661E9]/50 focus:border-[#2661E9] transition-all duration-300"
                       disabled={loading}
                     >

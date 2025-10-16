@@ -50,9 +50,9 @@ export const courses = [
     },
     {
         id: 4,
-        category: "cybersecurity",
+        category: "Cybersecurity",
         title: "cybersecurity Bootcamp",
-        instructor: "Emma Wilson",
+        instructor: "Success chukwu",
         instructorImage: "/instructors/emma.jpg",
         months: 6,
         price: 300,
@@ -62,8 +62,8 @@ export const courses = [
     {
         id: 5,
         category: "Dev/ops & cloud",
-        title: "Frontend Web Development Bootcamp",
-        instructor: "Emma Wilson",
+        title: "Dev/ops & cloud Bootcamp",
+        instructor: "John stones ",
         instructorImage: "/instructors/emma.jpg",
         months: 6,
         price: 300,
@@ -74,7 +74,7 @@ export const courses = [
         id: 6,
         category: "Data Analysis",
         title: "Data analysis Bootcamp",
-        instructor: "Emma Wilson",
+        instructor: "Sivesta ",
         instructorImage: "/instructors/emma.jpg",
         months: 6,
         price: 300,
@@ -152,17 +152,17 @@ export const featuresdata = [
 export const testimonials = [
     {
         name: "Michael",
-        text: "Enrolling in DataForte Academy’s cybersecurity program was a game-changer for my career...",
+        text: "Enrolling at Acelabview Academy’s cybersecurity program was a game-changer for my career...",
         image: "/michael.jpg",
     },
     {
         name: "Fehintola",
-        text: "DataForte Academy exceeded my expectations! The instructors were knowledgeable...",
+        text: "Acelabview Academy exceeded my expectations! The instructors were knowledgeable...",
         image: "/fehintola.jpg",
     },
     {
         name: "Morris",
-        text: "I was completely new to IT, but DataForte Academy made the learning process seamless...",
+        text: "I was completely new to IT, but Acelabview Academy made the learning process seamless...",
         image: "/morris.jpg",
     },
 ];

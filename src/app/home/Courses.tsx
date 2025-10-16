@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { courses } from "../data/data";
@@ -15,7 +16,7 @@ export default function CoursesSection() {
   return (
     <section className="bg-gray-50 text-gray-900 py-20">
       <div className="container mx-auto px-6 lg:px-20">
-        
+
         <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
           <div>
             <span className="bg-gray-200 text-gray-700 px-4 py-1 rounded-full text-sm font-semibold tracking-wide">
@@ -85,15 +86,17 @@ export default function CoursesSection() {
                 <div className="flex items-center justify-between mt-6">
                   <div>
                     <p className="text-lg font-semibold text-black-100">
-                      ${course.price.toFixed(2)}{" "}
+                      ₦{course.price.toFixed(2)}{" "}
                       <span className="text-balck-100 line-through text-sm ml-1">
-                        ${course.oldPrice.toFixed(2)}
+                        ₦{course.oldPrice.toFixed(2)}
                       </span>
                     </p>
                   </div>
-                  <Button className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold  transition-colors">
-                    Join Course
-                  </Button>
+                  <Link href="/course">
+                    <Button className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold  transition-colors">
+                      Join Course
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>

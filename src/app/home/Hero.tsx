@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../components/Button";
 import acelab from "../../../public/assets/images/ark.jpeg";
@@ -30,10 +31,12 @@ export default function HomePage() {
               and secure your future with hands-on training and expert-led
               courses at Acelabview  Academy.
             </p>
-
-            <Button variant="secondary" size="lg">
-              ENROLL NOW
-            </Button>
+            <Link href="/contact">
+              <Button className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold  transition-colors"
+              size="lg">
+                ENROLL NOW
+              </Button>
+            </Link>
           </div>
         </div>
 

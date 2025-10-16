@@ -6,7 +6,7 @@ import { useState } from "react";
 import { courses } from "../data/data";
 import NavBar from "../components/NavBar";
 import { Button } from "../components/Button";
-import { Float  } from "@/app/style/animation";
+import { Float } from "@/app/style/animation";
 import hero from "../../../public/assets/images/WhatsApp Image 2025-10-14 at 15.12.37.jpeg";
 
 export default function CoursesPage() {
@@ -24,7 +24,6 @@ export default function CoursesPage() {
   return (
     <main className="bg-gray-50 text-gray-900">
       <NavBar />
-      {/* HERO SECTION */}
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center text-center bg-gradient-to-br from-[#0a0a0a] via-[#141414] to-[#1c1c1c] text-white overflow-hidden">
         <div className="absolute inset-0">
           <Image
@@ -68,7 +67,7 @@ export default function CoursesPage() {
             ))}
           </div>
 
-          {/* Search bar */}
+         
           <div className="flex items-center w-full md:w-[350px] bg-white rounded-full shadow-md border border-gray-200 px-4 py-2 focus-within:ring-2 focus-within:ring-[#2661E9]">
             <input
               type="text"
@@ -83,14 +82,12 @@ export default function CoursesPage() {
           </div>
         </div>
 
-        {/* COURSE GRID */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {filteredCourses.map((course) => (
             <div
               key={course.id}
               className="relative text-black rounded-3xl overflow-hidden shadow-lg w-full transition-transform transform hover:-translate-y-2"
             >
-              {/* Course Image */}
               <div className="relative">
                 <Image
                   src={course.image}
@@ -100,8 +97,6 @@ export default function CoursesPage() {
                   className="w-full h-56 object-cover"
                 />
               </div>
-
-              {/* Course Content */}
               <div className="p-6 space-y-4 relative z-10">
                 <div>
                   <p className="text-xs uppercase text-black tracking-wider">
@@ -129,10 +124,10 @@ export default function CoursesPage() {
                 <div className="flex items-center justify-between pt-3">
                   <div>
                     <p className="text-lg font-semibold text-black-100">
-                      N{course.price.toFixed(2)}
+                      ₦{course.price.toFixed(2)}
                     </p>
                     <p className="text-sm text-black-100 line-through">
-                      ${course.oldPrice.toFixed(2)}
+                      ₦{course.oldPrice.toFixed(2)}
                     </p>
                   </div>
 
@@ -144,13 +139,10 @@ export default function CoursesPage() {
                 </div>
               </div>
 
-              {/* Cutout Shape */}
               <div className="absolute bottom-0 right-0 w-[130px] h-[80px] bg-gray-300 rounded-tl-[50px]" />
             </div>
           ))}
         </div>
-
-        {/* If no results */}
         {filteredCourses.length === 0 && (
           <p className="text-center text-gray-500 mt-20 text-lg">
             No courses found. Try another keyword.
@@ -158,7 +150,6 @@ export default function CoursesPage() {
         )}
       </section>
 
-      {/* CALL TO ACTION */}
       <section className="bg-[#2661E9] text-white py-20 text-center">
         <div className="container mx-auto px-6 lg:px-20">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

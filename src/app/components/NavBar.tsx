@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation"
 
 const navlinks = [
   { name: "Home", path: "/" },
-  { name: "Course", path: "/course" },
+  { name: "Courses", path: "/course" },
   { name: "About", path: "/about" },
   { name: "Contact", path: "/contact" },
   { name: "Blog", path: "/blog" }
@@ -68,6 +68,7 @@ export default function NavBar() {
               <Button
                 onClick={() => handleNavClick('/contact')}
                 className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold  transition-colors"
+                size="lg"
               >
                 Enroll Now
               </Button>
