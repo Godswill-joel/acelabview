@@ -41,7 +41,7 @@ export default function CoursesPage() {
         <div className="relative z-10 px-4 max-w-4xl mx-auto">
           <Float>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
-              Explore Our<span className="text-[#2661E9] bg-gradient-to-r from-[#2661E9] to-[#3b82f6] bg-clip-text text-transparent">Courses</span>
+              Explore Our<span className="text-[#2661E9] bg-gradient-to-r from-[#2661E9] to-[#3b82f6] bg-clip-text text-transparent"> Courses</span>
             </h1>
             <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-100 leading-relaxed"> {/* Changed to gray-100 for better contrast */}
               Learn from industry experts and gain practical skills to shape your

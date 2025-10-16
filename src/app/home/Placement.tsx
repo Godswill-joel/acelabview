@@ -1,7 +1,7 @@
 "use client";
 
 
-import { featuresdata } from "../data/data";
+import { featuresData } from "../data/data";
 import bgImage from "../../../public/assets/images/computer-program-coding-screen.jpg";
 
 
@@ -30,7 +30,7 @@ export default function CareerPlacementSection() {
 
             <div className="relative z-10 py-3 px-6 md:px-16 lg:px-20">
                 <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-                    {featuresdata.map((item, i) => {
+                    {featuresData.map((item, i) => {
                         const Icon = item.icon;
                         return (
                             <div

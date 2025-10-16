@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Button } from "../components/Button";
 import { values } from "../data/data";
 
@@ -19,10 +20,12 @@ export default function AboutSection() {
             knowledge in real-world scenarios. With a proven track record in job
             placement, we are your trusted partner for career advancement.
           </p>
+          <Link href="/about">
+            <Button className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold  transition-colors" size="md">
+              Learn More About Us
+            </Button>
+          </Link>
 
-          <Button className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold  transition-colors" size="md">
-            Learn More About Us
-          </Button>
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-6">
           {values.map((item, index) => {
