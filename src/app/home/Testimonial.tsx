@@ -12,7 +12,7 @@ export default function PlacementAndTestimonial() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/30 z-0"></div>
 
         <div className="relative z-10 text-center text-white mb-12">
-          <h4 className="text-pink-400 font-medium">Testimonial</h4>
+          <h4 className="text-[#2661E9] font-medium">Testimonial</h4>
           <h2 className="text-4xl font-bold mt-2">What Our Students Say About Us</h2>
         </div>
 
@@ -24,7 +24,7 @@ export default function PlacementAndTestimonial() {
             >
               <p className="text-sm mb-4 line-clamp-3">{item.text}</p>
               <div className="mt-4">
-                <h3 className="font-semibold text-purple-600">{item.name}</h3>
+                <h3 className="font-semibold text-[#2661E9]">{item.name}</h3>
                 <p className="text-xs text-gray-500">
                   {item.program} • {item.year}
                 </p>

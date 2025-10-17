@@ -102,7 +102,7 @@ export default function Page() {
             className="object-cover opacity-60"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div> {/* Reduced darkness overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
         </div>
 
         <div className="relative z-10 px-4 max-w-4xl mx-auto">
@@ -110,7 +110,7 @@ export default function Page() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
               Contact <span className="text-[#2661E9] bg-gradient-to-r from-[#2661E9] to-[#3b82f6] bg-clip-text text-transparent">Us</span>
             </h1>
-            <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-100 leading-relaxed"> {/* Changed to gray-100 for better contrast */}
+            <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-100 leading-relaxed"> 
               Ready to start your journey? We&apos;re here to answer all your questions and help you take the next step.
             </p>
           </Float>
@@ -212,8 +212,6 @@ export default function Page() {
                       </div>
                     );
                   })}
-
-                  {/* COURSE DROPDOWN */}
                   <div className="space-y-1">
                     <label
                       htmlFor="course"
@@ -276,7 +274,6 @@ export default function Page() {
             </div>
           </div>
 
-          {/* MAP SECTION */}
           <div className="mt-20 lg:mt-24">
             <div className="text-center mb-10">
               <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-[#2661E9] mb-3">

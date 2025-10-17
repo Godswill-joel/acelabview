@@ -1,10 +1,10 @@
 "use client";
 
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaSquareXTwitter } from "react-icons/fa6";
+import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import Link from "next/link";
 import acelabview from "../../../public/assets/images/ACE-Logo-White-300x139.png";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaSquareXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
     const socialLinks = [
@@ -58,7 +58,7 @@ export default function Footer() {
 
     return (
         <footer className="bg-black text-white pt-20 pb-10 relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#8B00B9] via-[#2661E9] to-[#8B00B9]" />
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#2661E9] via-[#2661E9] to-[#8B00B9]" />
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 lg:gap-16">
                     <div>
