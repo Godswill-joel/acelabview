@@ -2,68 +2,124 @@
 
 import Image from "next/image";
 import NavBar from "../components/NavBar";
-import { Float  } from "@/app/style/animation";
-import hero from "../../../public/assets/images/WhatsApp Image 2025-10-14 at 15.12.37.jpeg";
+import { Float } from "@/app/style/animation";
+import hero from "../../../public/assets/images/Hero.jpeg";
+import team from "../../../public/assets/images/About.jpeg";
 
 export default function About() {
   return (
     <main className="bg-gray-50 text-gray-900">
       <NavBar />
-      <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center text-center bg-gradient-to-br from-[#0a0a0a] via-[#141414] to-[#1c1c1c] text-white overflow-hidden">
+
+      {/* Hero Section */}
+      <section className="relative h-[60vh] flex items-center justify-center text-center bg-gradient-to-br from-[#0a0a0a] via-[#141414] to-[#1c1c1c] text-white overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={hero}
-            alt="Contact Hero"
+            alt="About Hero"
             fill
             className="object-cover opacity-60"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
 
-        <div className="relative z-10 px-4 max-w-4xl mx-auto">
+        <div className="relative z-10 px-6 max-w-4xl mx-auto">
           <Float>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
-              All About<span className="text-[#2661E9] bg-gradient-to-r from-[#2661E9] to-[#3b82f6] bg-clip-text text-transparent">Us</span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
+              About{" "}
+              <span className="text-[#2661E9] bg-gradient-to-r from-[#2661E9] to-[#3b82f6] bg-clip-text text-transparent">
+                AceLab TechHub
+              </span>
             </h1>
-            <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-100 leading-relaxed"> {/* Changed to gray-100 for better contrast */}
-              Know everthing about our institute and our achievements
+            <p className="text-lg md:text-xl mt-4 text-gray-200 leading-relaxed">
+              Building Africa’s future innovators through technology, creativity, and real-world engineering excellence.
             </p>
           </Float>
         </div>
       </section>
 
-      {/* About Content */}
-      <div className="container mx-auto px-6 lg:px-20 py-20 grid md:grid-cols-2 gap-10 items-center">
-        {/* Left - Image */}
+      {/* Who We Are Section */}
+      <section className="container mx-auto px-6 lg:px-20 py-20 grid md:grid-cols-2 gap-12 items-center">
         <div className="relative">
           <Image
-            src="/assets/images/student-ai.jpg"
-            alt="AI Learning"
+            src={team}
+            alt="AceLab TechHub Team"
             width={600}
             height={400}
-            className="rounded-2xl object-cover"
+            className="rounded-2xl object-cover shadow-lg"
           />
-          <div className="absolute top-4 left-4 bg-gradient-to-br from-purple-600 to-indigo-500 text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">
-            5-+ INSTRUCTORS
+          <div className="absolute top-5 left-5 bg-gradient-to-br from-[#2661E9] to-[#3b82f6] text-white font-semibold px-4 py-2 rounded-lg text-sm shadow-xl">
+            Empowering Tech Leaders
           </div>
         </div>
+
         <div>
-          <p className="text-sm font-semibold text-[#9eff00] uppercase mb-3">
-            About Cerdas
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold leading-snug mb-6">
-            AI-Powered Learning for the Next Generation
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Who We Are
           </h2>
-          <p className="text-gray-300 leading-relaxed">
-            At Cerdas, we’re revolutionizing education through artificial
-            intelligence. Our platform empowers students and instructors with
-            smart, adaptive learning experiences designed to inspire curiosity
-            and accelerate success. Join over 200,000 instructors and countless
-            learners shaping the future of learning.
+          <p className="text-gray-600 leading-relaxed mb-5">
+            <strong>AceLab TechHub</strong> is a forward-thinking innovation and technology hub dedicated to empowering the next generation of digital creators, engineers, and tech leaders. 
+            We provide cutting-edge training, product development support, and consultancy across key technology sectors — including software engineering, data analytics, cybersecurity, automation, energy systems, and maritime technology.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Our multidisciplinary team combines over six decades of experience in engineering and digital transformation, united by a shared passion for building scalable solutions, fostering talent, and driving progress across Africa’s tech ecosystem.
           </p>
         </div>
-      </div>
+      </section>
+
+      {/* Vision & Mission */}
+      <section className="bg-white py-20 px-6 lg:px-20">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 className="text-3xl font-bold text-[#2661E9] mb-4">
+              Our Vision
+            </h3>
+            <p className="text-gray-700 leading-relaxed">
+              AceLab TechHub envisions becoming Africa’s most trusted and innovative technology hub — cultivating world-class talent, advancing digital literacy, and delivering impactful tech-driven solutions that transform industries and empower communities.  
+              We aim to be a transformative force, setting new standards for innovation and excellence.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-3xl font-bold text-[#2661E9] mb-4">
+              Our Mission
+            </h3>
+            <p className="text-gray-700 leading-relaxed">
+              Our mission is to harness the power of technology to drive positive change in society.  
+              We bridge the gap between education and real-world application through hands-on training, innovation, and mentorship — empowering individuals and organizations to thrive in the digital age.  
+              Through excellence, collaboration, and creativity, we shape the future of tech in Africa and beyond.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values */}
+      <section className="bg-gradient-to-br from-[#0a0a0a] via-[#141414] to-[#1c1c1c] text-white py-20 px-6 lg:px-20 text-center">
+        <h3 className="text-3xl md:text-4xl font-bold mb-10">
+          Our Core Values
+        </h3>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {[
+            { title: "Innovation", text: "We constantly explore new ideas and embrace creativity to deliver cutting-edge solutions." },
+            { title: "Excellence", text: "We uphold the highest global standards in our training and service delivery." },
+            { title: "Empowerment", text: "We equip individuals with the skills and confidence to succeed in the digital era." },
+            { title: "Integrity", text: "We build trust through transparency, accountability, and professionalism." },
+            { title: "Collaboration", text: "We grow through teamwork, partnerships, and shared success." },
+            { title: "Impact", text: "We create sustainable change through technology and innovation." },
+          ].map((value, index) => (
+            <div
+              key={index}
+              className="p-6 bg-white/10 rounded-xl border border-white/10 backdrop-blur-md hover:bg-white/20 transition-all"
+            >
+              <h4 className="text-xl font-semibold text-[#d0a14a] mb-3">
+                {value.title}
+              </h4>
+              <p className="text-gray-200 leading-relaxed">{value.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }

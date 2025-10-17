@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../components/Button";
-import acelab from "../../../public/assets/images/ark.jpeg";
+import acelab from "../../../public/assets/images/tinywow_tinywow_ark_85209565_85209604.webp";
 
 export default function HomePage() {
   return (

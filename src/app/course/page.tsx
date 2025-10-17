@@ -8,7 +8,7 @@ import NavBar from "../components/NavBar";
 import { useRouter } from "next/navigation";
 import { Button } from "../components/Button";
 import { Float } from "@/app/style/animation";
-import hero from "../../../public/assets/images/WhatsApp Image 2025-10-14 at 15.12.37.jpeg";
+import hero from "../../../public/assets/images/Hero.jpeg";
 
 export default function CoursesPage() {
   const [search, setSearch] = useState("");

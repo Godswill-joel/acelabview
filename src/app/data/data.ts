@@ -209,21 +209,28 @@ export const featuresData = [
 
 export const testimonials = [
     {
-        name: "Michael",
-        text: "Enrolling in AceLabview Academy’s Cybersecurity program was a game-changer for my career. The practical training and mentorship helped me secure a role in network security within months.",
+        name: "Michael Adeyemi",
+        program: "Cybersecurity Program",
+        year: "Class of 2023",
+        text: "AceLabview Academy transformed my career path. The hands-on cybersecurity training and personalized mentorship helped me secure a network security role in just months.",
         image: "/michael.jpg",
     },
     {
-        name: "Fehintola",
-        text: "AceLabview Academy exceeded my expectations! The instructors were knowledgeable, patient, and passionate about teaching. I gained confidence and real-world skills.",
+        name: "Fehintola O.",
+        program: "Software Engineering Program",
+        year: "Class of 2024",
+        text: "AceLabview Academy exceeded my expectations! The instructors were patient, skilled, and made complex topics simple to grasp. I gained confidence and practical coding skills.",
         image: "/fehintola.jpg",
     },
     {
-        name: "Morris",
-        text: "I was completely new to IT, but AceLabview Academy made the learning process seamless. The structure and hands-on approach helped me transition into tech smoothly.",
+        name: "Morris K.",
+        program: "IT Fundamentals Program",
+        year: "Class of 2023",
+        text: "Coming from a non-tech background, AceLabview made my transition into IT smooth. The structured learning and real-world projects made all the difference.",
         image: "/morris.jpg",
     },
 ];
+
 
 /* ---------------------------------- BLOGS ---------------------------------- */
 
