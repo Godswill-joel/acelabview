@@ -278,6 +278,42 @@ export const blogs = [
     },
 ];
 
+export const techBlogs = [
+    {
+        id: 101,
+        title: "The Rise of Everyday Tech: How Innovation Shapes Our Lives",
+        author: "Tech Insights",
+        date: "October 18, 2025",
+        tag: "Innovation",
+        description:
+            "From smart wearables to AI-driven shopping recommendations, technology has quietly integrated into every corner of our routines. Here's how it's redefining human experiences and creativity.",
+        image: blog3,
+        featured: true,
+    },
+    {
+        id: 102,
+        title: "Why Artificial Intelligence Is Becoming Your New Daily Assistant",
+        author: "Ava Johnson",
+        date: "October 10, 2025",
+        tag: "AI & Life",
+        description:
+            "AI isn’t the future—it’s the present. From fitness trackers that predict your stress to smart homes that anticipate your mood, AI is learning to adapt to human emotion and needs.",
+        image: blog3,
+        featured: false,
+    },
+    {
+        id: 103,
+        title: "Digital Wellbeing: Staying Human in a Hyperconnected World",
+        author: "Liam Chen",
+        date: "September 29, 2025",
+        tag: "Mindful Tech",
+        description:
+            "The more we connect online, the more important it becomes to protect our mental space. Discover habits and tools for maintaining balance in the digital era.",
+        image: blog3,
+        featured: false,
+    },
+];
+
 export const selection = [
     "Web Development",
     "Data Science",

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { Button } from "./Button";
 import acelabview from "../../../public/assets/images/ACE-Logo-White-300x139.png";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaSquareXTwitter } from "react-icons/fa6";
 
@@ -70,7 +71,7 @@ export default function Footer() {
                                 priority
                             />
                         </div>
-                        <p className="text-gray-300 text-sm leading-relaxed mb-6 max-w-xs">
+                        <p className="text-gray-300 text-lg leading-relaxed mb-6 max-w-xs">
                             At Acelabview Academy, our mission is to empower you with the
                             knowledge, confidence, and credentials to excel in your chosen
                             field. Join us and take the first step toward a brighter future.
@@ -93,7 +94,7 @@ export default function Footer() {
 
                     {linkGroups.map((group, i) => (
                         <div key={i}>
-                            <h3 className="text-lg font-semibold text-[#2661E9] mb-4">
+                            <h3 className="text-3xl font-semibold text-[#2661E9] mb-4">
                                 {group.title}
                             </h3>
                             <ul className="space-y-3 text-sm">
@@ -101,7 +102,7 @@ export default function Footer() {
                                     <li key={j}>
                                         <Link
                                             href={link.path}
-                                            className="text-gray-300 hover:text-[#2661E9] transition-colors"
+                                            className="text-gray-300 hover:text-[#2661E9]  text-2xl  transition-colors"
                                         >
                                             {link.name}
                                         </Link>
@@ -111,10 +112,10 @@ export default function Footer() {
                         </div>
                     ))}
                     <div>
-                        <h3 className="text-lg font-semibold text-[#2661E9] mb-4">
+                        <h3 className="text-3xl font-semibold text-[#2661E9] mb-4">
                             Stay Connected
                         </h3>
-                        <p className="text-sm text-gray-300 mb-4">
+                        <p className="text-lg text-gray-300 mb-4">
                             Subscribe to our newsletter to get the latest updates and
                             learning opportunities.
                         </p>
@@ -127,12 +128,12 @@ export default function Footer() {
                                 className="w-full px-3 py-2 bg-white rounded-md text-sm text-black focus:outline-none focus:ring-2 focus:ring-[#2661E9]"
                                 required
                             />
-                            <button
+                            <Button
                                 type="submit"
-                                className="bg-[#2661E9] text-white text-sm px-4 py-2 rounded-md hover:bg-[#1a4bb8] transition-colors"
+                               className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold transition"
                             >
                                 Subscribe
-                            </button>
+                            </Button>
                         </form>
                         {status === "success" && (
                             <p className="text-green-400 text-sm mt-3 transition-all duration-300">

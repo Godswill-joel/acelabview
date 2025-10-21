@@ -55,14 +55,14 @@ export default function About() {
         </div>
 
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#2661E9] mb-6">
             Who We Are
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-5">
-            <strong>AceLab TechHub</strong> is a forward-thinking innovation and technology hub dedicated to empowering the next generation of digital creators, engineers, and tech leaders. 
+          <p className="text-gray-600  text-2xl leading-relaxed mb-5">
+            <strong className="text-gray-900">AceLab TechHub</strong> is a forward-thinking innovation and technology hub dedicated to empowering the next generation of digital creators, engineers, and tech leaders. 
             We provide cutting-edge training, product development support, and consultancy across key technology sectors — including software engineering, data analytics, cybersecurity, automation, energy systems, and maritime technology.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed text-2xl ">
             Our multidisciplinary team combines over six decades of experience in engineering and digital transformation, united by a shared passion for building scalable solutions, fostering talent, and driving progress across Africa’s tech ecosystem.
           </p>
         </div>
@@ -75,7 +75,7 @@ export default function About() {
             <h3 className="text-3xl font-bold text-[#2661E9] mb-4">
               Our Vision
             </h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-lg">
               AceLab TechHub envisions becoming Africa’s most trusted and innovative technology hub — cultivating world-class talent, advancing digital literacy, and delivering impactful tech-driven solutions that transform industries and empower communities.  
               We aim to be a transformative force, setting new standards for innovation and excellence.
             </p>
@@ -85,7 +85,7 @@ export default function About() {
             <h3 className="text-3xl font-bold text-[#2661E9] mb-4">
               Our Mission
             </h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-lg">
               Our mission is to harness the power of technology to drive positive change in society.  
               We bridge the gap between education and real-world application through hands-on training, innovation, and mentorship — empowering individuals and organizations to thrive in the digital age.  
               Through excellence, collaboration, and creativity, we shape the future of tech in Africa and beyond.
@@ -93,8 +93,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-      {/* Core Values */}
       <section className="bg-gradient-to-br from-[#0a0a0a] via-[#141414] to-[#1c1c1c] text-white py-20 px-6 lg:px-20 text-center">
         <h3 className="text-3xl md:text-4xl font-bold mb-10">
           Our Core Values
@@ -112,10 +110,10 @@ export default function About() {
               key={index}
               className="p-6 bg-white/10 rounded-xl border border-white/10 backdrop-blur-md hover:bg-white/20 transition-all"
             >
-              <h4 className="text-xl font-semibold text-[#d0a14a] mb-3">
+              <h4 className="text-xl font-semibold text-[#2661E9] mb-3">
                 {value.title}
               </h4>
-              <p className="text-gray-200 leading-relaxed">{value.text}</p>
+              <p className="text-gray-200 leading-relaxed text-lg">{value.text}</p>
             </div>
           ))}
         </div>
