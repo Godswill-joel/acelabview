@@ -54,7 +54,6 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* 🔹 Blog Section 2 - Technology Theme Enhanced */}
       <section className="bg-gradient-to-b from-gray-50 to-white border-t border-gray-200">
         <div className="container mx-auto px-6 py-20">
           <div className="flex items-center justify-center gap-3 mb-4">
