@@ -69,7 +69,7 @@ export default function CoursesSection() {
                 </h3>
 
                 <div className="flex items-center justify-between text-gray-500 text-sm mb-4">
-                  <div className="flex items-center gap-2">
+                  {/* <div className="flex items-center gap-2">
                     <Image
                       src={course.instructorImage}
                       alt={course.instructor}
@@ -78,7 +78,7 @@ export default function CoursesSection() {
                       className="rounded-full object-cover"
                     />
                     <span>{course.instructor}</span>
-                  </div>
+                  </div> */}
                   <span>{course.months} months</span>
                 </div>
 

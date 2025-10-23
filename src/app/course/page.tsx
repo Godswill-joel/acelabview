@@ -110,7 +110,7 @@ export default function CoursesPage() {
                 </div>
 
                 <div className="flex items-center justify-between text-sm text-black-100">
-                  <div className="flex items-center gap-2">
+                  {/* <div className="flex items-center gap-2">
                     <Image
                       src={course.instructorImage}
                       alt={course.instructor}
@@ -119,7 +119,7 @@ export default function CoursesPage() {
                       className="rounded-full object-cover"
                     />
                     <span>{course.instructor}</span>
-                  </div>
+                  </div> */}
                   <span>{course.months} Months</span>
                 </div>
 
@@ -133,7 +133,7 @@ export default function CoursesPage() {
                     </p>
                   </div>
 
-                  <Button className="bg-[#2661E9] ml-8 hover:bg-[#1a4bb8] text-white font-bold  transition-colors"
+                  <Button className="bg-[#2661E9] ml-8 mt-10 hover:bg-[#1a4bb8] text-white font-bold  transition-colors"
                     onClick={() =>
                       router.push(`/contact?course=${encodeURIComponent(course.title)}`)
                     }>
@@ -143,7 +143,7 @@ export default function CoursesPage() {
                 </div>
               </div>
 
-              <div className="absolute bottom-0 right-0 w-[130px] h-[80px] bg-gray-300 rounded-tl-[50px]" />
+              <div className="absolute bottom-0 right-0 w-[170px] h-[80px] bg-gray-300 rounded-tl-[50px]" />
             </div>
           ))}
         </div>
@@ -163,7 +163,7 @@ export default function CoursesPage() {
             Our team will help you find the best course to match your goals.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-3 bg-white text-[#2661E9] font-semibold rounded-full hover:bg-gray-100 transition">
+            <button className="px-8 py-3 bg-white text-[#2661E9] font-semibold rounded-full hover:bg-[#2661E9] hover:text-white transition">
               Contact Us
             </button>
           </Link>

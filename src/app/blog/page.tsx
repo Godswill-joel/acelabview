@@ -160,10 +160,10 @@ export default function BlogPage() {
                         {blog.description}
                       </p>
 
-                      <button className="group text-indigo-600 text-sm font-semibold inline-flex items-center hover:text-indigo-700 transition">
+                      {/* <button className="group text-indigo-600 text-sm font-semibold inline-flex items-center hover:text-indigo-700 transition">
                         Learn More
                         <ArrowUpRight className="w-4 h-4 ml-1 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                      </button>
+                      </button> */}
                     </div>
                   </div>
                 ))}

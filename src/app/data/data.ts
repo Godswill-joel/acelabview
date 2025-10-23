@@ -135,7 +135,6 @@ export const courses = [
     },
 ];
 
-/* ---------------------------------- VALUES ---------------------------------- */
 
 export const values = [
     {
@@ -210,22 +209,22 @@ export const featuresData = [
 export const testimonials = [
     {
         name: "Michael Adeyemi",
-        program: "Cybersecurity Program",
-        year: "Class of 2023",
+        program: "Cybersecurity Bootcamp",
+        year: "Class of 2024",
         text: "AceLabview Academy transformed my career path. The hands-on cybersecurity training and personalized mentorship helped me secure a network security role in just months.",
         image: "/michael.jpg",
     },
     {
         name: "Fehintola O.",
-        program: "Software Engineering Program",
+        program: "Web development",
         year: "Class of 2024",
         text: "AceLabview Academy exceeded my expectations! The instructors were patient, skilled, and made complex topics simple to grasp. I gained confidence and practical coding skills.",
         image: "/fehintola.jpg",
     },
     {
         name: "Morris K.",
-        program: "IT Fundamentals Program",
-        year: "Class of 2023",
+        program: "Dtat analysis",
+        year: "Class of 2024",
         text: "Coming from a non-tech background, AceLabview made my transition into IT smooth. The structured learning and real-world projects made all the difference.",
         image: "/morris.jpg",
     },
@@ -298,7 +297,7 @@ export const techBlogs = [
         tag: "AI & Life",
         description:
             "AI isn’t the future—it’s the present. From fitness trackers that predict your stress to smart homes that anticipate your mood, AI is learning to adapt to human emotion and needs.",
-        image: blog3,
+        image: blog4,
         featured: false,
     },
     {
@@ -309,7 +308,7 @@ export const techBlogs = [
         tag: "Mindful Tech",
         description:
             "The more we connect online, the more important it becomes to protect our mental space. Discover habits and tools for maintaining balance in the digital era.",
-        image: blog3,
+        image: blog2,
         featured: false,
     },
 ];
@@ -317,11 +316,12 @@ export const techBlogs = [
 export const selection = [
     "Web Development",
     "Data Science",
-    "UI/UX Design",
-    "Cybersecurity",
+    "Data Analysis Bootcamp",
+    "User Experience Design Fundamentals",
+    "Cybersecurity Bootcamp",
     "Mobile App Development",
-    "Cloud Computing",
-    "Graphics Design",
+    "DevOps & Cloud Bootcamp",
+    "Introduction to Graphic Design",
     "Digital Marketing",
     "Software Engineering",
     "Frontend Web Development Bootcamp",

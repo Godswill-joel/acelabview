@@ -148,7 +148,7 @@ export default function Page() {
               </div>
 
               <div className="border-t border-gray-300/30 pt-10 space-y-8">
-                <div className="text-center lg:text-center">
+                <div className="text-left lg:text-left">
                   <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-[#2661E9] mb-6">
                     Follow Our Journey
                   </h2>
@@ -158,7 +158,7 @@ export default function Page() {
                   {socials.map(({ id, text }) => (
                     <div
                       key={id}
-                      className="text-center p-6 rounded-xl bg-white/80 backdrop-blur-sm border border-gray-200/50 shadow-sm hover:shadow-md transition-all duration-300"
+                      className="text-center  p-6 rounded-xl bg-white/80 backdrop-blur-sm border border-gray-200/50 shadow-sm hover:shadow-md transition-all duration-300"
                     >
                       <p className="font-semibold text-gray-800 mb-4 text-sm uppercase tracking-wide">
                         {text}
