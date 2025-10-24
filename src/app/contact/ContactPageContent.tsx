@@ -58,30 +58,28 @@ export default function Page() {
 
   const handleSend = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    if (!formRef.current) {
-      console.error("Form reference is null");
-      return;
-    }
-
     setLoading(true);
     setShowSuccess(false);
 
+    const { name, email, telephone, messenger, course } = Object.fromEntries(
+      new FormData(formRef.current!)
+    );
+
     try {
-      const result = await emailjs.sendForm(
+      const result = await emailjs.send(
         "service_wqpg7pr",
         "template_11dtbs5",
-        formRef.current,
+        { name, email, telephone, messenger, course },
         "HC5l6FMRwWbUbXwuP"
       );
-
-      console.log("EmailJS result:", result);
+      console.log(result.text);
       setShowSuccess(true);
-      formRef.current.reset();
+      formRef.current?.reset();
     } catch (err) {
       console.error("EmailJS error:", err);
+      alert("Something went wrong. Please try again.");
     } finally {
-      setLoading(false); 
+      setLoading(false);
     }
   };
 
@@ -110,7 +108,7 @@ export default function Page() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
               Contact <span className="text-[#2661E9] bg-gradient-to-r from-[#2661E9] to-[#3b82f6] bg-clip-text text-transparent">Us</span>
             </h1>
-            <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-100 leading-relaxed"> 
+            <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-100 leading-relaxed">
               Ready to start your journey? We&apos;re here to answer all your questions and help you take the next step.
             </p>
           </Float>
