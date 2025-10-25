@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { Button } from "./Button";
-import acelabview from "../../../public/assets/images/ACE-Logo-White-300x139.png";
+import acelabview from "../../../public/assets/images/ACELogo2.png";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaSquareXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
