@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { techBlogs } from "../data/data";
 import { Button } from "../components/Button";
-import { Calendar, User, ArrowUpRight, Cpu } from "lucide-react";
+import { Calendar, User, Cpu } from "lucide-react";
 import hero from "../../../public/assets/images/WhatsApp Image 2025-10-14 at 15.12.37.jpeg";
 
 export default function BlogPage() {
@@ -93,7 +93,7 @@ export default function BlogPage() {
 
                   <div className="p-8 md:p-10">
                     <div className="flex flex-wrap items-center gap-4 mb-4">
-                      <span className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-xs font-semibold px-4 py-1.5 rounded-full">
+                      <span className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white text-xs font-semibold px-4 py-1.5 rounded-full">
                         {blog.tag}
                       </span>
                       <div className="flex items-center text-sm text-gray-600">
@@ -113,10 +113,10 @@ export default function BlogPage() {
                       {blog.description}
                     </p>
 
-                    <button className="group bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold px-6 py-3 rounded-xl inline-flex items-center transition-all shadow-lg hover:shadow-xl">
+                    <Button className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold  transition-colors">
                       Explore More
-                      <ArrowUpRight className="w-5 h-5 ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                    </button>
+                     
+                    </Button>
                   </div>
                 </div>
               ))}

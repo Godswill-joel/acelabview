@@ -124,12 +124,12 @@ export default function CoursesPage() {
                 </div>
 
                 <div className="flex items-center justify-between pt-3">
-                  <div>
+                <div>
                     <p className="text-lg font-semibold text-black-100">
-                      ₦{course.price.toFixed(2)}
-                    </p>
-                    <p className="text-sm text-black-100 line-through">
-                      ₦{course.oldPrice.toFixed(2)}
+                      ₦{course.price.toLocaleString('en-NG')}{" "}
+                      <span className="text-black-100 line-through text-sm ml-1">
+                        ₦{course.oldPrice.toLocaleString('en-NG')}
+                      </span>
                     </p>
                   </div>
 

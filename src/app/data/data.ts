@@ -31,8 +31,8 @@ export const courses = [
         instructor: "Sarah Mitchell",
         instructorImage: "/instructors/sarah.jpg",
         months: 3,
-        price: 300,
-        oldPrice: 500,
+        price: 250000,
+        oldPrice: 300000,
         image: Graphics,
 
         // SEO Metadata
@@ -45,21 +45,21 @@ export const courses = [
     },
     {
         id: 2,
-        category: "Graphic Design",
-        title: "Introduction to Graphic Design",
+        category: "Web Development",
+        title: "Backend Web Development Bootcamp",
         instructor: "Liam Garcia",
         instructorImage: "/instructors/liam.jpg",
         months: 2,
-        price: 300,
-        oldPrice: 500,
+        price: 350000,
+        oldPrice: 600000,
         image: DataAnalysis,
 
-        slug: "introduction-to-graphic-design",
-        metaTitle: "Introduction to Graphic Design | AceLabview Academy",
+        slug: "backend Web Development Bootcamp",
+        metaTitle: "Backend Web Development| AceLabview Academy",
         metaDescription:
             "Kickstart your design career with hands-on training in graphic design fundamentals, typography, color theory, and composition.",
-        keywords: "graphic design, photoshop, illustrator, branding, creativity",
-        canonical: "https://acelabview.com/courses/introduction-to-graphic-design",
+        keywords: "python, Django, Node.js, web development",
+        canonical: "https://acelabview.com/courses/backend-web-development-bootcamp",
     },
     {
         id: 3,
@@ -68,8 +68,8 @@ export const courses = [
         instructor: "Emma Wilson",
         instructorImage: "/instructors/emma.jpg",
         months: 7,
-        price: 300,
-        oldPrice: 500,
+        price: 250000,
+        oldPrice: 400000,
         image: Frontend,
 
         slug: "frontend-web-development-bootcamp",
@@ -86,8 +86,8 @@ export const courses = [
         instructor: "Success Chukwu",
         instructorImage: "/instructors/emma.jpg",
         months: 6,
-        price: 300,
-        oldPrice: 500,
+        price: 350000,
+        oldPrice: 700000,
         image: Cybersecurity,
 
         slug: "cybersecurity-bootcamp",
@@ -104,8 +104,8 @@ export const courses = [
         instructor: "John Stones",
         instructorImage: "/instructors/emma.jpg",
         months: 5,
-        price: 300,
-        oldPrice: 500,
+        price: 350000,
+        oldPrice: 650000,
         image: Devops,
 
         slug: "devops-and-cloud-bootcamp",
@@ -122,8 +122,8 @@ export const courses = [
         instructor: "Silvesta",
         instructorImage: "/instructors/emma.jpg",
         months: 6,
-        price: 300,
-        oldPrice: 500,
+        price: 350000,
+        oldPrice: 500000,
         image: Backend,
 
         slug: "data-analysis-bootcamp",
@@ -314,12 +314,10 @@ export const techBlogs = [
 ];
 
 export const selection = [
-    "Web Development",
-    "Data Science",
     "Data Analysis Bootcamp",
     "User Experience Design Fundamentals",
     "Cybersecurity Bootcamp",
-    "Mobile App Development",
+    "Backend Web Development Bootcampt",
     "DevOps & Cloud Bootcamp",
     "Introduction to Graphic Design",
     "Digital Marketing",

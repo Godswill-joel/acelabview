@@ -101,7 +101,7 @@ export default function NavBar() {
                 onClick={() => handleNavClick('/inventory')}
                 className="w-full bg-[#9B4DFF] hover:bg-[#1a4bb8] text-white"
               >
-                Add car
+                Enroll Now
               </Button>
             </div>
           </div>

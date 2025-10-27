@@ -86,12 +86,13 @@ export default function CoursesSection() {
                 <div className="flex items-center justify-between mt-6">
                   <div>
                     <p className="text-lg font-semibold text-black-100">
-                      ₦{course.price.toFixed(2)}{" "}
-                      <span className="text-balck-100 line-through text-sm ml-1">
-                        ₦{course.oldPrice.toFixed(2)}
+                      ₦{course.price.toLocaleString('en-NG')}{" "}
+                      <span className="text-black-100 line-through text-sm ml-1">
+                        ₦{course.oldPrice.toLocaleString('en-NG')}
                       </span>
                     </p>
                   </div>
+
                   <Link href="/course">
                     <Button className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold  transition-colors">
                       Join Course
