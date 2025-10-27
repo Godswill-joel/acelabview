@@ -44,7 +44,7 @@ export default function NavBar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Image
-            src="/assets/images/Ace-logo-1.png" 
+            src="/assets/images/ACELogo1.png"  
             alt="Acelabview"
             width={150}
             height={50}

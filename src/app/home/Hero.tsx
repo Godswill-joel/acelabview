@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../components/Button";
-import acelab from "../../../public/assets/images/tinywow_tinywow_ark_85209565_85209604.webp";
 
 export default function HomePage() {
   return (
@@ -11,7 +10,8 @@ export default function HomePage() {
       <section className="relative h-[100vh] flex items-center justify-center md:justify-start">
         <div className="absolute inset-0 ">
           <Image
-            src={acelab}
+            // src="/assets/images/tinywow_tinywow_ark_85209565_85209604.webp"
+            src="/assets/images/tinywow_tinywow_ark_85209565_85209604.webp"
             alt="DataForte students learning tech"
             fill
             className="object-cover object-center "
