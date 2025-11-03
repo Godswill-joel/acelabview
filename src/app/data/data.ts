@@ -1,12 +1,11 @@
-
 import {
-    Lock,
-    Send,
-    Award,
-    Users,
-    Layers,
-    Shield,
-    Headphones,
+  Lock,
+  Send,
+  Award,
+  Users,
+  Layers,
+  Shield,
+  Headphones,
 } from "lucide-react";
 
 import blog1 from "../../../public/assets/images/blog1.webp";
@@ -47,7 +46,7 @@ export const courses = [
         id: 2,
         category: "Web Development",
         title: "Backend Web Development Bootcamp",
-        instructor: "John Stares",
+        instructor: "Liam Garcia",
         instructorImage: "/instructors/liam.jpg",
         months: 2,
         price: 350000,
@@ -65,7 +64,7 @@ export const courses = [
         id: 3,
         category: "Web Development",
         title: "Frontend Web Development Bootcamp",
-        instructor: "Godswill Emma",
+        instructor: "Emma Wilson",
         instructorImage: "/instructors/emma.jpg",
         months: 7,
         price: 250000,
@@ -101,7 +100,7 @@ export const courses = [
         id: 5,
         category: "DevOps & Cloud",
         title: "DevOps & Cloud Bootcamp",
-        instructor: "Amadi ",
+        instructor: "John Stones",
         instructorImage: "/instructors/emma.jpg",
         months: 5,
         price: 350000,
@@ -135,192 +134,186 @@ export const courses = [
     },
 ];
 
-
 export const values = [
-    {
-        title: "Excellence",
-        description:
-            "Delivering world-class education and certifications that meet global industry standards.",
-        icon: Layers,
-        color: "bg-purple-600",
-    },
-    {
-        title: "Innovation",
-        description:
-            "Staying at the forefront of emerging technologies and learning methodologies.",
-        icon: Shield,
-        color: "bg-pink-400",
-    },
-    {
-        title: "Empowerment",
-        description:
-            "Equipping students with the knowledge and skills to achieve their career goals.",
-        icon: Headphones,
-        color: "bg-blue-500",
-    },
+  {
+    title: "Excellence",
+    description:
+      "Delivering world-class education and certifications that meet global industry standards.",
+    icon: Layers,
+    color: "bg-purple-600",
+  },
+  {
+    title: "Innovation",
+    description:
+      "Staying at the forefront of emerging technologies and learning methodologies.",
+    icon: Shield,
+    color: "bg-pink-400",
+  },
+  {
+    title: "Empowerment",
+    description:
+      "Equipping students with the knowledge and skills to achieve their career goals.",
+    icon: Headphones,
+    color: "bg-blue-500",
+  },
 ];
 
-
-
 export const features = [
-    "Globally Recognized Certifications",
-    "Hands-On Training",
-    "Expert-Led Courses",
-    "Flexible Learning Options",
-    "Career Placement Support",
-    "Cutting-Edge Curriculum",
-    "Lifetime Learning Community",
-    "Master essential methodologies in your program",
+  "Globally Recognized Certifications",
+  "Hands-On Training",
+  "Expert-Led Courses",
+  "Flexible Learning Options",
+  "Career Placement Support",
+  "Cutting-Edge Curriculum",
+  "Lifetime Learning Community",
+  "Master essential methodologies in your program",
 ];
 
 export const featuresData = [
-    {
-        title: "Career Placement",
-        description:
-            "Benefit from our dedicated job placement services and internship opportunities to land your dream role.",
-        icon: Lock,
-        color: "bg-purple-600",
-    },
-    {
-        title: "Dedicated Mentorship",
-        description:
-            "Receive personalized guidance and support from experienced mentors throughout your learning journey.",
-        icon: Send,
-        color: "bg-pink-500",
-    },
-    {
-        title: "Globally Recognized Certifications",
-        description:
-            "Earn certifications that are highly valued by employers worldwide.",
-        icon: Award,
-        color: "bg-green-500",
-    },
-    {
-        title: "Lifetime Learning Community",
-        description:
-            "Join a supportive network of peers, alumni, and mentors for ongoing professional growth.",
-        icon: Users,
-        color: "bg-yellow-500",
-    },
+  {
+    title: "Career Placement",
+    description:
+      "Benefit from our dedicated job placement services and internship opportunities to land your dream role.",
+    icon: Lock,
+    color: "bg-purple-600",
+  },
+  {
+    title: "Dedicated Mentorship",
+    description:
+      "Receive personalized guidance and support from experienced mentors throughout your learning journey.",
+    icon: Send,
+    color: "bg-pink-500",
+  },
+  {
+    title: "Globally Recognized Certifications",
+    description:
+      "Earn certifications that are highly valued by employers worldwide.",
+    icon: Award,
+    color: "bg-green-500",
+  },
+  {
+    title: "Lifetime Learning Community",
+    description:
+      "Join a supportive network of peers, alumni, and mentors for ongoing professional growth.",
+    icon: Users,
+    color: "bg-yellow-500",
+  },
 ];
-
-
 
 export const testimonials = [
-    {
-        name: "Michael Adeyemi",
-        program: "Cybersecurity Bootcamp",
-        year: "Class of 2024",
-        text: "AceLabview Academy transformed my career path. The hands-on cybersecurity training and personalized mentorship helped me secure a network security role in just months.",
-        image: "/michael.jpg",
-    },
-    {
-        name: "Fehintola O.",
-        program: "Web development",
-        year: "Class of 2024",
-        text: "AceLabview Academy exceeded my expectations! The instructors were patient, skilled, and made complex topics simple to grasp. I gained confidence and practical coding skills.",
-        image: "/fehintola.jpg",
-    },
-    {
-        name: "Morris K.",
-        program: "Dtat analysis",
-        year: "Class of 2024",
-        text: "Coming from a non-tech background, AceLabview made my transition into IT smooth. The structured learning and real-world projects made all the difference.",
-        image: "/morris.jpg",
-    },
+  {
+    name: "Michael Adeyemi",
+    program: "Cybersecurity Bootcamp",
+    year: "Class of 2024",
+    text: "AceLabview Academy transformed my career path. The hands-on cybersecurity training and personalized mentorship helped me secure a network security role in just months.",
+    image: "/michael.jpg",
+  },
+  {
+    name: "Fehintola O.",
+    program: "Web development",
+    year: "Class of 2024",
+    text: "AceLabview Academy exceeded my expectations! The instructors were patient, skilled, and made complex topics simple to grasp. I gained confidence and practical coding skills.",
+    image: "/fehintola.jpg",
+  },
+  {
+    name: "Morris K.",
+    program: "Dtat analysis",
+    year: "Class of 2024",
+    text: "Coming from a non-tech background, AceLabview made my transition into IT smooth. The structured learning and real-world projects made all the difference.",
+    image: "/morris.jpg",
+  },
 ];
-
 
 /* ---------------------------------- BLOGS ---------------------------------- */
 
 export const blogs = [
-    {
-        id: 1,
-        title: "5 Simple Ways to Stay Motivated While Learning Online",
-        date: "Oct 11, 2025",
-        author: "Admin",
-        tag: "Motivation",
-        description:
-            "Discover easy strategies to keep your motivation high while studying online and stay consistent with your goals.",
-        image: blog1,
-        featured: true,
-    },
-    {
-        id: 2,
-        title: "How to Create Effective Study Schedules for Online Courses",
-        date: "Oct 08, 2025",
-        author: "Admin",
-        tag: "Study Tips",
-        description:
-            "Learn the art of organizing your online classes, assignments, and breaks efficiently to stay productive.",
-        image: blog2,
-    },
-    {
-        id: 3,
-        title: "Top 10 Online Resources for Self-Directed Learners",
-        date: "Oct 08, 2025",
-        author: "Admin",
-        tag: "Online Learning",
-        description:
-            "Explore the best websites and tools that make self-learning effective, enjoyable, and interactive.",
-        image: blog3,
-    },
-    {
-        id: 4,
-        title: "Balancing Work and Study: Tips for Busy Professionals",
-        date: "Oct 08, 2025",
-        author: "Admin",
-        tag: "Productivity",
-        description:
-            "Manage your time and energy efficiently while working and studying online with practical strategies.",
-        image: blog4,
-    },
+  {
+    id: 1,
+    title: "5 Simple Ways to Stay Motivated While Learning Online",
+    date: "Oct 11, 2025",
+    author: "Admin",
+    tag: "Motivation",
+    description:
+      "Discover easy strategies to keep your motivation high while studying online and stay consistent with your goals.",
+    image: blog1,
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "How to Create Effective Study Schedules for Online Courses",
+    date: "Oct 08, 2025",
+    author: "Admin",
+    tag: "Study Tips",
+    description:
+      "Learn the art of organizing your online classes, assignments, and breaks efficiently to stay productive.",
+    image: blog2,
+  },
+  {
+    id: 3,
+    title: "Top 10 Online Resources for Self-Directed Learners",
+    date: "Oct 08, 2025",
+    author: "Admin",
+    tag: "Online Learning",
+    description:
+      "Explore the best websites and tools that make self-learning effective, enjoyable, and interactive.",
+    image: blog3,
+  },
+  {
+    id: 4,
+    title: "Balancing Work and Study: Tips for Busy Professionals",
+    date: "Oct 08, 2025",
+    author: "Admin",
+    tag: "Productivity",
+    description:
+      "Manage your time and energy efficiently while working and studying online with practical strategies.",
+    image: blog4,
+  },
 ];
 
 export const techBlogs = [
-    {
-        id: 101,
-        title: "The Rise of Everyday Tech: How Innovation Shapes Our Lives",
-        author: "Tech Insights",
-        date: "October 18, 2025",
-        tag: "Innovation",
-        description:
-            "From smart wearables to AI-driven shopping recommendations, technology has quietly integrated into every corner of our routines. Here's how it's redefining human experiences and creativity.",
-        image: blog3,
-        featured: true,
-    },
-    {
-        id: 102,
-        title: "Why Artificial Intelligence Is Becoming Your New Daily Assistant",
-        author: "Ava Johnson",
-        date: "October 10, 2025",
-        tag: "AI & Life",
-        description:
-            "AI isn’t the future—it’s the present. From fitness trackers that predict your stress to smart homes that anticipate your mood, AI is learning to adapt to human emotion and needs.",
-        image: blog4,
-        featured: false,
-    },
-    {
-        id: 103,
-        title: "Digital Wellbeing: Staying Human in a Hyperconnected World",
-        author: "Liam Chen",
-        date: "September 29, 2025",
-        tag: "Mindful Tech",
-        description:
-            "The more we connect online, the more important it becomes to protect our mental space. Discover habits and tools for maintaining balance in the digital era.",
-        image: blog2,
-        featured: false,
-    },
+  {
+    id: 101,
+    title: "The Rise of Everyday Tech: How Innovation Shapes Our Lives",
+    author: "Tech Insights",
+    date: "October 18, 2025",
+    tag: "Innovation",
+    description:
+      "From smart wearables to AI-driven shopping recommendations, technology has quietly integrated into every corner of our routines. Here's how it's redefining human experiences and creativity.",
+    image: blog3,
+    featured: true,
+  },
+  {
+    id: 102,
+    title: "Why Artificial Intelligence Is Becoming Your New Daily Assistant",
+    author: "Ava Johnson",
+    date: "October 10, 2025",
+    tag: "AI & Life",
+    description:
+      "AI isn’t the future—it’s the present. From fitness trackers that predict your stress to smart homes that anticipate your mood, AI is learning to adapt to human emotion and needs.",
+    image: blog4,
+    featured: false,
+  },
+  {
+    id: 103,
+    title: "Digital Wellbeing: Staying Human in a Hyperconnected World",
+    author: "Liam Chen",
+    date: "September 29, 2025",
+    tag: "Mindful Tech",
+    description:
+      "The more we connect online, the more important it becomes to protect our mental space. Discover habits and tools for maintaining balance in the digital era.",
+    image: blog2,
+    featured: false,
+  },
 ];
 
 export const selection = [
-    "Data Analysis Bootcamp",
-    "User Experience Design Fundamentals",
-    "Cybersecurity Bootcamp",
-    "Backend Web Development Bootcampt",
-    "DevOps & Cloud Bootcamp",
-    "Introduction to Graphic Design",
-    "Digital Marketing",
-    "Software Engineering",
-    "Frontend Web Development Bootcamp",
+  "Data Analysis Bootcamp",
+  "User Experience Design Fundamentals",
+  "Cybersecurity Bootcamp",
+  "Backend Web Development Bootcampt",
+  "DevOps & Cloud Bootcamp",
+  "Introduction to Graphic Design",
+  "Digital Marketing",
+  "Software Engineering",
+  "Frontend Web Development Bootcamp",
 ];
