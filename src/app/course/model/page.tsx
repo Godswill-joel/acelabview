@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { courses } from "@/app/data/data";
-import CourseOutlineModal from "./CourseOutlineModal";
+import CourseModal from "../model/CourseOutlineModal";
 
 export default function OutlinePage({ params }: { params: { slug: string } }) {
   const { slug } = params;
@@ -11,5 +11,7 @@ export default function OutlinePage({ params }: { params: { slug: string } }) {
 
   if (!course) return null;
 
-  return <CourseOutlineModal course={course} onClose={() => router.back()} />;
-}
+  return (
+  <CourseModal course={course} onClose={() => router.back()} />
+);
+};
