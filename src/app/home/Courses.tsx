@@ -69,33 +69,24 @@ export default function CoursesSection() {
                 </h3>
 
                 <div className="flex items-center justify-between text-gray-500 text-sm mb-4">
-                  {/* <div className="flex items-center gap-2">
-                    <Image
+                  <div className="flex items-center gap-2">
+                    {/* <Image
                       src={course.instructorImage}
                       alt={course.instructor}
                       width={28}
                       height={28}
                       className="rounded-full object-cover"
-                    />
+                    /> */}
                     <span>{course.instructor}</span>
-                  </div> */}
+                  </div>
                   <span>{course.months} months</span>
                 </div>
 
                 {/* Pricing & Join */}
-                <div className="flex items-center justify-between mt-6">
-                  <div>
-                    <p className="text-lg font-semibold text-black-100">
-                      ₦{course.price.toLocaleString('en-NG')}{" "}
-                      <span className="text-black-100 line-through text-sm ml-1">
-                        ₦{course.oldPrice.toLocaleString('en-NG')}
-                      </span>
-                    </p>
-                  </div>
-
+                <div className="flex items-center justify-end mt-6">
                   <Link href="/course">
                     <Button className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold  transition-colors">
-                      Join Course
+                      learn more
                     </Button>
                   </Link>
                 </div>
