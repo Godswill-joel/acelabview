@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import Image from "next/image";
@@ -9,10 +10,13 @@ import { useRouter } from "next/navigation";
 import { Button } from "../components/Button";
 import { Float } from "@/app/style/animation";
 import hero from "../../../public/assets/images/Hero.jpeg";
+import CourseModal from "../components/CourseOutlineModal";
 
 export default function CoursesPage() {
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCourse, setSelectedCourse] = useState<any | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const router = useRouter();
 
   const categories = ["All", ...new Set(courses.map((c) => c.category))];
@@ -23,9 +27,33 @@ export default function CoursesPage() {
       course.title.toLowerCase().includes(search.toLowerCase())
   );
 
+  const handleJoinCourse = (course: any) => {
+    setSelectedCourse(course);
+    setIsModalOpen(true);
+  };
+
+  const handleEnroll = () => {
+    if (selectedCourse) {
+      router.push(`/contact?course=${encodeURIComponent(selectedCourse.title)}`);
+    }
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedCourse(null);
+  };
+
   return (
     <main className="bg-gray-50 text-gray-900">
       <NavBar />
+
+      <CourseModal
+        course={selectedCourse}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        onEnroll={handleEnroll}
+      />
+
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center text-center bg-gradient-to-br from-[#0a0a0a] via-[#141414] to-[#1c1c1c] text-white overflow-hidden">
         <div className="absolute inset-0">
           <Image
@@ -124,7 +152,7 @@ export default function CoursesPage() {
                 </div>
 
                 <div className="flex items-center justify-between pt-3">
-                <div>
+                  <div>
                     <p className="text-lg font-semibold text-black-100">
                       ₦{course.price.toLocaleString('en-NG')}{" "}
                       <span className="text-black-100 line-through text-sm ml-1">
@@ -134,9 +162,7 @@ export default function CoursesPage() {
                   </div>
 
                   <Button className="bg-[#2661E9] ml-8 mt-10 hover:bg-[#1a4bb8] text-white font-bold  transition-colors"
-                    onClick={() =>
-                      router.push(`/contact?course=${encodeURIComponent(course.title)}`)
-                    }>
+                    onClick={() => handleJoinCourse(course)}>
                     Join Course
                   </Button>
 
