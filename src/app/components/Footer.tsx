@@ -31,9 +31,8 @@ export default function Footer() {
             title: "Company",
             links: [
                 { name: "About Us", path: "/about" },
-                { name: "Career", path: "/" },
-                { name: "Customers", path: "/" },
-                { name: "Our Team", path: "/" },
+                { name: "Career", path: "/course" },
+                { name: "Customers", path: "/contact" },
             ],
         },
     ];
@@ -47,14 +46,18 @@ export default function Footer() {
 
         if (!emailRegex.test(email)) {
             setStatus("error");
+            setEmail("");
+            setTimeout(() => setStatus("idle"), 3000);
             return;
         }
 
-        setStatus("idle"); 
+        setStatus("idle");
         setTimeout(() => {
             setStatus("success");
             setEmail("");
-        }, 1500);
+            setTimeout(() => setStatus("idle"), 3000);
+        }, 1000);
+
     };
 
     return (
@@ -72,9 +75,8 @@ export default function Footer() {
                             />
                         </div>
                         <p className="text-gray-300 text-lg leading-relaxed mb-6 max-w-xs">
-                            At Acelabview Academy, our mission is to empower you with the
-                            knowledge, confidence, and credentials to excel in your chosen
-                            field. Join us and take the first step toward a brighter future.
+                            At Acelabview Academy, Our mission is to harness the power of technology to drive positive change in society.
+                            We bridge the gap between education and real-world application through hands-on training, innovation, and mentorship — empowering individuals and organizations.
                         </p>
                         <div className="flex space-x-5 mt-4 relative z-10">
                             {socialLinks.map(({ icon: Icon, link }, index) => (
@@ -130,7 +132,7 @@ export default function Footer() {
                             />
                             <Button
                                 type="submit"
-                               className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold transition"
+                                className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold transition"
                             >
                                 Subscribe
                             </Button>

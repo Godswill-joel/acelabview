@@ -311,7 +311,7 @@ export const testimonials = [
     },
     {
         name: "Morris K.",
-        program: "Dtat analysis",
+        program: "Data analysis",
         year: "Class of 2024",
         text: "Coming from a non-tech background, AceLabview made my transition into IT smooth. The structured learning and real-world projects made all the difference.",
         image: "/morris.jpg",
