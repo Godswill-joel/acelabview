@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation";
 import { Button } from "../components/Button";
 import { Float } from "@/app/style/animation";
 import hero from "../../../public/assets/images/Hero.jpeg";
-import CourseModal from "../components/CourseOutlineModal";
+import CourseModal from "../course/model/CourseOutlineModal";
 
 export default function CoursesPage() {
   const [search, setSearch] = useState("");
