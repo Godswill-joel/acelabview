@@ -189,7 +189,7 @@ export default function CoursesPage() {
             Our team will help you find the best course to match your goals.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-3 bg-white text-[#2661E9] font-semibold rounded-full hover:bg-[#2661E9] hover:text-white transition">
+            <button className="px-8 py-3 bg-[#2661E9] text-white font-semibold rounded-full hover:bg-white hover:text-[#2661E9] transition">
               Contact Us
             </button>
           </Link>
