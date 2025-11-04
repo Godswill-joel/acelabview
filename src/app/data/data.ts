@@ -185,7 +185,6 @@ export const courses = [
             "Disaster Recovery and High Availability Setup",
             "Cost Optimization and Resource Management",
             "DevOps Culture and Team Collaboration Strategies",
-            "Capstone Project: End-to-end DevOps Implementation",
         ],
 
         slug: "devops-and-cloud-bootcamp",

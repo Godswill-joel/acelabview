@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { testimonials } from "../data/data";
 import back from "../../../public/assets/images/cyber-security-concept-digital-art.jpg";
 
@@ -29,7 +28,7 @@ export default function PlacementAndTestimonial() {
                   {item.program} • {item.year}
                 </p>
               </div>
-              <div className="absolute bottom-[-30px] left-1/2 transform -translate-x-1/2">
+              {/* <div className="absolute bottom-[-30px] left-1/2 transform -translate-x-1/2">
                 <Image
                   src={item.image}
                   alt={item.name}
@@ -37,7 +36,7 @@ export default function PlacementAndTestimonial() {
                   height={60}
                   className="rounded-full border-4 border-white"
                 />
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

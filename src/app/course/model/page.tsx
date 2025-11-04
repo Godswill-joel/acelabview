@@ -12,6 +12,13 @@ export default function OutlinePage({ params }: { params: { slug: string } }) {
   if (!course) return null;
 
   return (
-  <CourseModal course={course} onClose={() => router.back()} />
-);
-};
+    <CourseModal
+      course={course}
+      isOpen={true} 
+      onClose={() => router.back()}
+      onEnroll={() =>
+        router.push(`/contact?course=${encodeURIComponent(course.title)}`)
+      }
+    />
+  );
+}

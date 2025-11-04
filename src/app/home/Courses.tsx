@@ -86,7 +86,7 @@ export default function CoursesSection() {
                 <div className="flex items-center justify-end mt-6">
                   <Link href="/course">
                     <Button className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold  transition-colors">
-                      learn more
+                      Learn More
                     </Button>
                   </Link>
                 </div>
