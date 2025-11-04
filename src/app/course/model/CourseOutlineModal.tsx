@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { Button } from "../../components/Button";
 
@@ -77,7 +76,7 @@ export default function CourseModal({ course, isOpen, onClose, onEnroll }: Cours
 
                 {/* Footer */}
                 <div className="sticky bottom-0 bg-gray-50 border-t border-gray-200 p-6 sm:p-8">
-                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
+                    {/* <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
                         <div>
                             <div className="flex items-baseline gap-2">
                                 <span className="text-3xl sm:text-4xl font-bold text-gray-900">
@@ -88,7 +87,7 @@ export default function CourseModal({ course, isOpen, onClose, onEnroll }: Cours
                                 </span>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="flex flex-col sm:flex-row gap-3">
                         <Button
