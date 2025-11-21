@@ -20,7 +20,6 @@ import Graphics from "../../../public/assets/images/features01.jpg";
 import DataAnalysis from "../../../public/assets/images/WhatsApp Image 2025-10-27 at 17.25.56.jpeg";
 import Frontend from "../../../public/assets/images/WhatsApp Image 2025-10-27 at 17.25.57 (1).jpeg";
 
-/* ---------------------------------- COURSES ---------------------------------- */
 
 export const courses = [
     {
@@ -61,7 +60,7 @@ export const courses = [
         id: 2,
         category: "Web Development",
         title: "Backend Web Development Bootcamp",
-        instructor: "Liam Garcia",
+        instructor: " Wisdom Chimeruchem",
         instructorImage: "/instructors/liam.jpg",
         months: 6,
         price: 350000,
@@ -97,7 +96,7 @@ export const courses = [
         id: 3,
         category: "Web Development",
         title: "Frontend Web Development Bootcamp",
-        instructor: "Emma Wilson",
+        instructor: "God'swill Emmanuel ",
         instructorImage: "/instructors/emma.jpg",
         months: 4,
         price: 250000,
@@ -164,7 +163,7 @@ export const courses = [
         id: 5,
         category: "DevOps & Cloud",
         title: "DevOps & Cloud Bootcamp",
-        instructor: "John Stones",
+        instructor: "Amadi Dominic ",
         instructorImage: "/instructors/emma.jpg",
         months: 4,
         price: 350000,
@@ -198,7 +197,7 @@ export const courses = [
         id: 6,
         category: "Data Analysis",
         title: "Data Analysis Bootcamp",
-        instructor: "Silvesta",
+        instructor: " Nneoma Pamella",
         instructorImage: "/instructors/emma.jpg",
         months: 3,
         price: 350000,

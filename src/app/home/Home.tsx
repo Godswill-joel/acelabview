@@ -6,15 +6,16 @@ import CareerPlacementSection from "./Placement";
 import PlacementAndTestimonial from "./Testimonial";
 
 
+
 export default function Home () {
     return (
-        <>
+        <div className="max-w-screeen">
         <Hero />
         <CoursesSection />
         <AboutSection />
         <Offer />
         <CareerPlacementSection />
         <PlacementAndTestimonial />
-        </>
+        </div>
     )
 }

@@ -78,7 +78,6 @@ export default function CoursesPage() {
           </Float>
         </div>
       </section>
-      {/* course filter */}
       <section className="container mx-auto px-6 lg:px-20 py-16">
         <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
           {/* Category filter buttons */}
@@ -161,7 +160,7 @@ export default function CoursesPage() {
                     </p>
                   </div>
 
-                  <Button className="bg-[#2661E9] ml-8 mt-10 hover:bg-[#1a4bb8] text-white font-bold  transition-colors"
+                  <Button className="bg-[#2661E9]  max-w-[720px] ml-8 top-10 hover:bg-[#1a4bb8] text-white font-bold  transition-colors"
                     onClick={() => handleJoinCourse(course)}>
                     Join Course
                   </Button>
@@ -189,9 +188,9 @@ export default function CoursesPage() {
             Our team will help you find the best course to match your goals.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-3 bg-[#2661E9] text-white font-semibold rounded-full hover:bg-white hover:text-[#2661E9] transition">
+            <Button className="px-8 ml-auto mr-auto py-3 bg-[#2661E9] text-white font-semibold rounded-full hover:bg-white hover:text-[#2661E9] transition">
               Contact Us
-            </button>
+            </Button>
           </Link>
         </div>
       </section>
