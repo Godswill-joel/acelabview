@@ -99,7 +99,7 @@ export default function NavBar() {
             <div className="mt-4 pt-4 border-t border-gray-100">
               <Button
                 onClick={() => handleNavClick('/inventory')}
-                className="w-full bg-[#9B4DFF] hover:bg-[#1a4bb8] text-white"
+                className="w-full bg-[#2661E9] hover:bg-[#1a4bb8] text-white"
               >
                 Enroll Now
               </Button>
