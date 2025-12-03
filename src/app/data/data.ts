@@ -96,7 +96,7 @@ export const courses = [
         id: 3,
         category: "Web Development",
         title: "Frontend Web Development Bootcamp",
-        instructor: "God'swill Emmanuel ",
+        instructor: "Godswill Emmanuel ",
         instructorImage: "/instructors/emma.jpg",
         months: 4,
         price: 250000,
