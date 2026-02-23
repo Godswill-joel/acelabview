@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Button } from "./Button";
 import acelabview from "../../../public/assets/images/ACELogo2.png";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaSquareXTwitter } from "react-icons/fa6";
+import Credentials from "../credentials/page";
 
 export default function Footer() {
     const socialLinks = [
@@ -61,6 +62,8 @@ export default function Footer() {
     };
 
     return (
+        <div>
+            <Credentials />
         <footer className="bg-black text-white pt-20 pb-10 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#2661E9] via-[#2661E9] to-[#8B00B9]" />
             <div className="container mx-auto px-6">
@@ -155,5 +158,6 @@ export default function Footer() {
                 </div>
             </div>
         </footer>
+        </div>
     );
 }
