@@ -29,7 +29,7 @@ export default function HomePage() {
             <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-8">
               Gain in-demand skills, earn globally recognized certifications,
               and secure your future with hands-on training and expert-led
-              courses at Acelabview  Academy.
+              courses at Acelab  Academy.
             </p>
             <Link href="/contact">
               <Button className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold  transition-colors"

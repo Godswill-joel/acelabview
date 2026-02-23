@@ -29,7 +29,7 @@ export default function About() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
               About{" "}
               <span className="text-[#2661E9] bg-gradient-to-r from-[#2661E9] to-[#3b82f6] bg-clip-text text-transparent">
-                AceLab TechHub
+                AceLab Academy
               </span>
             </h1>
             <p className="text-lg md:text-xl mt-4 text-gray-200 leading-relaxed">
@@ -59,7 +59,7 @@ export default function About() {
             Who We Are
           </h2>
           <p className="text-gray-600  text-2xl leading-relaxed mb-5">
-            <strong className="text-gray-900">AceLab TechHub</strong> is a forward-thinking innovation and technology hub dedicated to empowering the next generation of digital creators, engineers, and tech leaders. 
+            <strong className="text-gray-900">AceLab Academy</strong> is a forward-thinking innovation and technology hub dedicated to empowering the next generation of digital creators, engineers, and tech leaders. 
             We provide cutting-edge training, product development support, and consultancy across key technology sectors — including software engineering, data analytics, cybersecurity, automation, energy systems, and maritime technology.
           </p>
           <p className="text-gray-600 leading-relaxed text-2xl ">
@@ -76,7 +76,7 @@ export default function About() {
               Our Vision
             </h3>
             <p className="text-gray-700 leading-relaxed text-lg">
-              AceLab TechHub envisions becoming Africa’s most trusted and innovative technology hub — cultivating world-class talent, advancing digital literacy, and delivering impactful tech-driven solutions that transform industries and empower communities.  
+              AceLab Academy envisions becoming Africa’s most trusted and innovative technology hub — cultivating world-class talent, advancing digital literacy, and delivering impactful tech-driven solutions that transform industries and empower communities.  
               We aim to be a transformative force, setting new standards for innovation and excellence.
             </p>
           </div>

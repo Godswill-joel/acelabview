@@ -63,7 +63,7 @@ export default function CoursesPage() {
             className="object-cover opacity-60"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div> {/* Reduced darkness overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div> 
         </div>
 
         <div className="relative z-10 px-4 max-w-4xl mx-auto">
@@ -71,7 +71,7 @@ export default function CoursesPage() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
               Explore Our<span className="text-[#2661E9] bg-gradient-to-r from-[#2661E9] to-[#3b82f6] bg-clip-text text-transparent"> Courses</span>
             </h1>
-            <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-100 leading-relaxed"> {/* Changed to gray-100 for better contrast */}
+            <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-100 leading-relaxed"> 
               Learn from industry experts and gain practical skills to shape your
               future.
             </p>

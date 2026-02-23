@@ -53,8 +53,6 @@ export default function CourseModal({ course, isOpen, onClose, onEnroll }: Cours
             </button>
           </div>
         </div>
-
-        {/* Content */}
         <div className="overflow-y-auto max-h-[calc(90vh-280px)] sm:max-h-[calc(90vh-300px)]">
           <div className="p-6 sm:p-8">
             <h3 className="text-lg sm:text-xl font-bold mb-4 text-gray-900">Course Outline</h3>

@@ -73,9 +73,10 @@ export default function Footer() {
                                 className="w-36 md:w-44"
                                 priority
                             />
+                            <p>RC:9188582</p>
                         </div>
                         <p className="text-gray-300 text-lg leading-relaxed mb-6 max-w-xs">
-                            At Acelabview Academy, Our mission is to harness the power of technology to drive positive change in society.
+                            At Acelab Academy, Our mission is to harness the power of technology to drive positive change in society.
                             We bridge the gap between education and real-world application through hands-on training, innovation, and mentorship — empowering individuals and organizations.
                         </p>
                         <div className="flex space-x-5 mt-4 relative z-10">

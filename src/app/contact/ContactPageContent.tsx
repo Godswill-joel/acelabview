@@ -21,7 +21,7 @@ type Field =
   | { id: string; as: "textarea"; placeholder: string; rows: number; type?: never };
 
 const socials: Social[] = [
-  { id: "club", text: "Ace Labview" },
+  { id: "club", text: "Ace Lab Academy" },
 ];
 
 const fields: Field[] = [

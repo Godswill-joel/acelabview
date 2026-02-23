@@ -11,10 +11,10 @@ export default function AboutSection() {
         <div>
           <h2 className="text-[#2661E9] font-semibold mb-2 text-4xl">Who are We?</h2>
           <h3 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
-            Acelabview Academy
+            Acelab Academy
           </h3>
           <p className="text-gray-700 leading-relaxed mb-8">
-            At Acelabview Academy, we empower students with cutting-edge skills
+            At Acelab Academy, we empower students with cutting-edge skills
             and certifications that meet global industry standards. Our hands-on
             approach ensures you’re not just learning but applying your
             knowledge in real-world scenarios. With a proven track record in job
