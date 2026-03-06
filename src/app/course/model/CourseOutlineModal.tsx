@@ -4,10 +4,11 @@ import { Button } from "../../components/Button";
 interface CourseModalProps {
   course: {
     title: string;
-    outline: string[];
+    description?: string;
+    outline?: string[];
     months: number;
-    price: number;
-    oldPrice: number;
+    price?: number;
+    oldPrice?: number;
   };
   isOpen: boolean;
   onClose: () => void;
@@ -17,8 +18,10 @@ interface CourseModalProps {
 export default function CourseModal({ course, isOpen, onClose, onEnroll }: CourseModalProps) {
   if (!isOpen) return null;
 
-  const discount = Math.round(((course.oldPrice - course.price) / course.oldPrice) * 100);
-
+  const discount =
+  course.oldPrice && course.price
+    ? Math.round(((course.oldPrice - course.price) / course.oldPrice) * 100)
+    : 0;
   return (
     <div
       className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4 sm:p-6 animate-in fade-in duration-200"
@@ -53,23 +56,31 @@ export default function CourseModal({ course, isOpen, onClose, onEnroll }: Cours
             </button>
           </div>
         </div>
-        <div className="overflow-y-auto max-h-[calc(90vh-280px)] sm:max-h-[calc(90vh-300px)]">
-          <div className="p-6 sm:p-8">
-            <h3 className="text-lg sm:text-xl font-bold mb-4 text-gray-900">Course Outline</h3>
+        {course.outline ? (
+          <>
+            <h3 className="text-lg sm:text-xl font-bold mb-4 text-gray-900">
+              Course Outline
+            </h3>
+
             <ul className="space-y-3">
               {course.outline.map((item, index) => (
-                <li key={index} className="flex items-start gap-3 group">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#2661E9]/10 flex items-center justify-center mt-0.5 group-hover:bg-[#2661E9]/20 transition-colors">
-                    <svg className="w-4 h-4 text-[#2661E9]" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <span className="text-gray-700 leading-relaxed flex-1">{item}</span>
+                <li key={index} className="flex items-start gap-3">
+                  <span className="text-gray-700">{item}</span>
                 </li>
               ))}
             </ul>
-          </div>
-        </div>
+          </>
+        ) : (
+          <>
+            <h3 className="text-lg sm:text-xl font-bold mb-4 text-gray-900">
+              Course Description
+            </h3>
+
+            <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+              {course.description}
+            </p>
+          </>
+        )}
 
         {/* Footer */}
         <div className="sticky bottom-0 bg-gray-50 border-t border-gray-200 p-6 sm:p-8">

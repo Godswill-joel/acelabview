@@ -1,6 +1,7 @@
 
 import Image from "next/image";
 import ITF from "../../../public/assets/images/ITF.png";
+import FMOLP from "../../../public/assets/images/FMOLP.png"
 import nabteb from "../../../public/assets/images/nabteb.png";
 import Unitest from "../../../public/assets/images/Unitest.png";
 
@@ -9,10 +10,10 @@ const credentials = [
     name: "Industrial Training Fund (ITF)",
     logo: ITF,
   },
-//   {
-//     name: "Federal Ministry of Labour & Productivity",
-//     logo: "/logos/labour.png",
-//   },
+  {
+    name: "Federal Ministry of Labour & Productivity",
+    logo: FMOLP,
+  },
 //   {
 //     name: "Rivers State Ministry of Education",
 //     logo: "/logos/rivers-edu.png",
