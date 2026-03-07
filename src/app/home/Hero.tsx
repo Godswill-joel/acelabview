@@ -8,14 +8,9 @@ import { Oregano } from "next/font/google";
 const oregano = Oregano({
   subsets: ["latin"],
   weight: ["400"],
-  style: ["normal", "italic"],
+  style: ["normal"],
 });
 
-const oreganoBoldItalic = Oregano({
-  subsets: ["latin"],
-  weight: ["400"],
-  style: ["italic"],
-});
 export default function HomePage() {
   return (
     <main className="relative overflow-hidden bg-white">
@@ -34,17 +29,17 @@ export default function HomePage() {
         <div className="z-1 container mx-auto px-6 sm:px-8 md:px-12 lg:px-20 text-center md:text-left text-white">
           <div className="max-w-5xl mx-auto md:mx-0">
 
-            <h1 className={`${oreganoBoldItalic.className}  text-2xl sm:text-4xl md:text-6xl font-bold mb-4 leading-snug md:leading-tight`}>
+            <h1 className={"text-2xl sm:text-4xl md:text-6xl font-bold mb-4 leading-snug md:leading-tight"}>
               Your Future in{" "}
               <span
-                className={" text-[#2661E9] text-4xl sm:text-5xl md:text-7xl font-bold italic"}
+                className={` ${oregano.className} text-[#2661E9] text-4xl sm:text-5xl md:text-7xl font-bold `}
               >
                 Tech
               </span>{" "}
               <br />
               and{" "}
               <span
-                className={"text-[#2661E9] text-4xl sm:text-5xl md:text-7xl font-bold italic"}
+                className={` ${oregano.className} text-[#2661E9] text-4xl sm:text-5xl md:text-7xl font-bold `}
               >
                 Marine Engineering
               </span>
