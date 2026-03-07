@@ -30,6 +30,20 @@ import troubleshoot3 from "../../../public/assets/images/troubleshoot3.png";
 import troubleshoot4 from "../../../public/assets/images/troubleshoot4.png";
 import troubleshoot5 from "../../../public/assets/images/troubleshoot5.png";
 import troubleshoot6 from "../../../public/assets/images/troubleshoot6.png";
+import testimony1 from "../../../public/assets/images/1.png";
+import testimony2 from "../../../public/assets/images/3.png";
+import testimony3 from "../../../public/assets/images/4.png";
+import testimony4 from "../../../public/assets/images/5.png";
+import testimony5 from "../../../public/assets/images/6.png";
+import testimony6 from "../../../public/assets/images/7.png";
+import testimony7 from "../../../public/assets/images/8.png";
+import testimony8 from "../../../public/assets/images/9.png";
+import testimony9 from "../../../public/assets/images/10.png";
+import testimony10 from "../../../public/assets/images/12.png";
+import testimony11 from "../../../public/assets/images/13.png";
+import testimony12 from "../../../public/assets/images/14.png";
+
+
 /* ------------Tech Courses ---------*/
 export const courses = [
     {
@@ -303,29 +317,21 @@ export const featuresData = [
     },
 ];
 
-export const testimonials = [
-    {
-        name: "Michael Adeyemi",
-        program: "Cybersecurity Bootcamp",
-        year: "Class of 2024",
-        text: "AceLab Academy transformed my career path. The hands-on cybersecurity training and personalized mentorship helped me secure a network security role in just months.",
-        image: "/michael.jpg",
-    },
-    {
-        name: "Fehintola O.",
-        program: "Web development",
-        year: "Class of 2024",
-        text: "AceLab Academy exceeded my expectations! The instructors were patient, skilled, and made complex topics simple to grasp. I gained confidence and practical coding skills.",
-        image: "/fehintola.jpg",
-    },
-    {
-        name: "Morris K.",
-        program: "Data analysis",
-        year: "Class of 2024",
-        text: "Coming from a non-tech background, AceLab made my transition into IT smooth. The structured learning and real-world projects made all the difference.",
-        image: "/morris.jpg",
-    },
-];
+export const testimonialImages = [
+    { id: 1, src: testimony1.src, alt: "Testimonial 1" },
+    { id: 2, src: testimony2.src, alt: "Testimonial 2" },
+    { id: 3, src: testimony3.src, alt: "Testimonial 3" },
+    { id: 4, src: testimony4.src, alt: "Testimonial 4" },
+    { id: 5, src: testimony5.src, alt: "Testimonial 5" },
+    { id: 6, src: testimony6.src, alt: "Testimonial 6" },
+    { id: 7, src: testimony7.src, alt: "Testimonial 7" },
+    { id: 8, src: testimony8.src, alt: "Testimonial 8" },
+    { id: 9, src: testimony9.src, alt: "Testimonial 9" },
+    { id: 10, src: testimony10.src, alt: "Testimonial 10" },
+    { id: 11, src: testimony11.src, alt: "Testimonial 11" },
+    { id: 12, src: testimony12.src, alt: "Testimonial 12" },
+  ];
+  
 
 /* ---------------------------------- BLOGS ---------------------------------- */
 
