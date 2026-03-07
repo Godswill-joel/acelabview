@@ -5,11 +5,16 @@ import Image from "next/image";
 import { useState } from "react";
 import { courses } from "../data/data";
 import { Button } from "../components/Button";
+import { marineCourseTopics } from "../data/data";
 
 export default function CoursesSection() {
   const [search, setSearch] = useState("");
 
-  const filteredCourses = courses.filter((course) =>
+
+  const marinePreview = marineCourseTopics.slice(0, 2);
+  const combinedCourses = [...courses, ...marinePreview];
+
+  const filteredCourses = combinedCourses.filter((course) =>
     course.title.toLowerCase().includes(search.toLowerCase())
   );
 
@@ -44,55 +49,51 @@ export default function CoursesSection() {
 
         {/* Courses Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {filteredCourses.map((course) => (
-            <div
-              key={course.id}
-              className="bg-white rounded-3xl overflow-hidden shadow-lg transition-transform transform hover:-translate-y-2"
-            >
-              {/* Image */}
-              <div className="relative w-full h-56">
-                <Image
-                  src={course.image}
-                  alt={course.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
+          {filteredCourses.map((course) => {
+            const isMarine = marinePreview.some(m => m.id === course.id);
+            const link = isMarine ? "/marineElectricalTraining" : "/course";
+            const imageSrc = course.image ?? course.images ?? "/assets/images/hero4.png";
+            return (
+              <div
+                key={course.id}
+                className="bg-white rounded-3xl overflow-hidden shadow-lg transition-transform transform hover:-translate-y-2"
+              >
+                {/* Image */}
+                <div className="relative w-full h-56">
+                  <Image
+                    src={imageSrc}
+                    alt={course.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
 
-              {/* Card Content */}
-              <div className="p-6">
-                <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-                  {course.category || "Course Category"}
-                </p>
-                <h3 className="text-lg md:text-xl font-semibold mb-3">
-                  {course.title}
-                </h3>
+                {/* Card Content */}
+                <div className="p-6">
+                  <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
+                    {course.category || "Course Category"}
+                  </p>
 
-                <div className="flex items-center justify-between text-gray-500 text-sm mb-4">
-                  <div className="flex items-center gap-2">
-                    {/* <Image
-                      src={course.instructorImage}
-                      alt={course.instructor}
-                      width={28}
-                      height={28}
-                      className="rounded-full object-cover"
-                    /> */}
-                    <span>{course.instructor}</span>
+                  <h3 className="text-lg md:text-xl font-semibold mb-3">
+                    {course.title}
+                  </h3>
+
+                  <div className="flex items-center justify-between text-gray-500 text-sm mb-4">
+                    <span>{course.months} months</span>
                   </div>
-                  <span>{course.months} months</span>
-                </div>
 
-                {/* Pricing & Join */}
-                <div className="flex items-center justify-end mt-6">
-                  <Link href="/course">
-                    <Button className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold  transition-colors">
-                      Learn More
-                    </Button>
-                  </Link>
+                  <div className="flex items-center justify-end mt-6">
+                    <Link href={link}>
+                      <Button className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold transition-colors">
+                        Learn More
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+
+          })}
         </div>
       </div>
     </section>

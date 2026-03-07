@@ -3,40 +3,74 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../components/Button";
+import { Oregano } from "next/font/google";
 
+const oregano = Oregano({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+});
+
+const oreganoBoldItalic = Oregano({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["italic"],
+});
 export default function HomePage() {
   return (
     <main className="relative overflow-hidden bg-white">
       <section className="relative h-[100vh] flex items-center justify-center md:justify-start">
         <div className="absolute inset-0 ">
           <Image
-            // src="/assets/images/tinywow_tinywow_ark_85209565_85209604.webp"
             src="/assets/images/tinywow_tinywow_ark_85209565_85209604.webp"
-            alt="DataForte students learning tech"
+            alt="acelab students learning tech"
             fill
             className="object-cover object-center "
             priority
           />
-          <div className="absolute inset-0 bg-black/60 md:bg-black/50" />
+          <div className="absolute inset-0 bg-black/60 md:bg-black/80" />
         </div>
+
         <div className="z-1 container mx-auto px-6 sm:px-8 md:px-12 lg:px-20 text-center md:text-left text-white">
-          <div className="max-w-2xl">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 leading-snug md:leading-tight">
-              Your Future in Tech <br />
-              <span className="text-[#2661E9]">Starts Here</span>
+          <div className="max-w-5xl mx-auto md:mx-0">
+
+            <h1 className={`${oreganoBoldItalic.className}  text-2xl sm:text-4xl md:text-6xl font-bold mb-4 leading-snug md:leading-tight`}>
+              Your Future in{" "}
+              <span
+                className={" text-[#2661E9] text-4xl sm:text-5xl md:text-7xl font-bold italic"}
+              >
+                Tech
+              </span>{" "}
+              <br />
+              and{" "}
+              <span
+                className={"text-[#2661E9] text-4xl sm:text-5xl md:text-7xl font-bold italic"}
+              >
+                Marine Engineering
+              </span>
+              <br />
+              Starts Here
             </h1>
 
-            <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-8">
+            {/* Reduced width on mobile */}
+            <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-8 max-w-md mx-auto md:max-w-none md:mx-0">
               Gain in-demand skills, earn globally recognized certifications,
               and secure your future with hands-on training and expert-led
-              courses at Acelab  Academy.
+              courses at Acelab Academy.
             </p>
-            <Link href="/contact">
-              <Button className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold  transition-colors"
-              size="lg">
-                ENROLL NOW
-              </Button>
-            </Link>
+
+            {/* Center button on mobile */}
+            <div className="flex justify-center md:justify-start">
+              <Link href="/contact">
+                <Button
+                  className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold transition-colors"
+                  size="lg"
+                >
+                  ENROLL NOW
+                </Button>
+              </Link>
+            </div>
+
           </div>
         </div>
 

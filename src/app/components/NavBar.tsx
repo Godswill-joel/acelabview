@@ -12,7 +12,7 @@ const navlinks = [
   { name: "Courses", path: "/course", 
     children: [
     { name: "Marine Electrical courses", path: "/marineElectricalTraining" },
-    { name: "Tech Courses", path: "/course" },
+    { name: "IT Courses", path: "/course" },
     
   ],  },
   { name: "About", path: "/about" },
