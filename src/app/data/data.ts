@@ -30,18 +30,6 @@ import troubleshoot3 from "../../../public/assets/images/troubleshoot3.png";
 import troubleshoot4 from "../../../public/assets/images/troubleshoot4.png";
 import troubleshoot5 from "../../../public/assets/images/troubleshoot5.png";
 import troubleshoot6 from "../../../public/assets/images/troubleshoot6.png";
-import testimony1 from "../../../public/assets/images/1.png";
-import testimony2 from "../../../public/assets/images/3.png";
-import testimony3 from "../../../public/assets/images/4.png";
-import testimony4 from "../../../public/assets/images/5.png";
-import testimony5 from "../../../public/assets/images/6.png";
-import testimony6 from "../../../public/assets/images/7.png";
-import testimony7 from "../../../public/assets/images/8.png";
-import testimony8 from "../../../public/assets/images/9.png";
-import testimony9 from "../../../public/assets/images/10.png";
-import testimony10 from "../../../public/assets/images/12.png";
-import testimony11 from "../../../public/assets/images/13.png";
-import testimony12 from "../../../public/assets/images/14.png";
 
 
 /* ------------Tech Courses ---------*/
@@ -318,18 +306,18 @@ export const featuresData = [
 ];
 
 export const testimonialImages = [
-    { id: 1, src: testimony1.src, alt: "Testimonial 1" },
-    { id: 2, src: testimony2.src, alt: "Testimonial 2" },
-    { id: 3, src: testimony3.src, alt: "Testimonial 3" },
-    { id: 4, src: testimony4.src, alt: "Testimonial 4" },
-    { id: 5, src: testimony5.src, alt: "Testimonial 5" },
-    { id: 6, src: testimony6.src, alt: "Testimonial 6" },
-    { id: 7, src: testimony7.src, alt: "Testimonial 7" },
-    { id: 8, src: testimony8.src, alt: "Testimonial 8" },
-    { id: 9, src: testimony9.src, alt: "Testimonial 9" },
-    { id: 10, src: testimony10.src, alt: "Testimonial 10" },
-    { id: 11, src: testimony11.src, alt: "Testimonial 11" },
-    { id: 12, src: testimony12.src, alt: "Testimonial 12" },
+    { id: 1, src: 'https://res.cloudinary.com/dzhpdvoqd/image/upload/v1772901426/12_johdft.png', alt: "Testimonial 1" },
+    { id: 2, src: 'https://res.cloudinary.com/dzhpdvoqd/image/upload/v1772901426/13_fppi0s.png', alt: "Testimonial 2" },
+    { id: 3, src: 'https://res.cloudinary.com/dzhpdvoqd/image/upload/v1772901422/7_kjzxo0.png', alt: "Testimonial 3" },
+    { id: 4, src: 'https://res.cloudinary.com/dzhpdvoqd/image/upload/v1772901421/9_alho7s.png', alt: "Testimonial 4" },
+    { id: 5, src: 'https://res.cloudinary.com/dzhpdvoqd/image/upload/v1772901421/10_a2qjjq.png', alt: "Testimonial 5" },
+    { id: 6, src: 'https://res.cloudinary.com/dzhpdvoqd/image/upload/v1772901420/6_yd1qgr.png', alt: "Testimonial 6" },
+    { id: 7, src: 'https://res.cloudinary.com/dzhpdvoqd/image/upload/v1772901420/5_twe1rp.png', alt: "Testimonial 7" },
+    { id: 8, src: 'https://res.cloudinary.com/dzhpdvoqd/image/upload/v1772901415/3_z29lu7.png', alt: "Testimonial 8" },
+    { id: 9, src: 'https://res.cloudinary.com/dzhpdvoqd/image/upload/v1772901414/8_eaecv9.png', alt: "Testimonial 9" },
+    { id: 10, src: 'https://res.cloudinary.com/dzhpdvoqd/image/upload/v1772901411/14_uscz49.png', alt: "Testimonial 10" },
+    { id: 11, src: 'https://res.cloudinary.com/dzhpdvoqd/image/upload/v1772901410/1_qddaxq.png', alt: "Testimonial 11" },
+    { id: 12, src: 'https://res.cloudinary.com/dzhpdvoqd/image/upload/v1772901410/4_ohzqly.png', alt: "Testimonial 12" },
   ];
   
 
