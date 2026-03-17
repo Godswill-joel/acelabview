@@ -1,8 +1,8 @@
 "use client";
 
 
-import { featuresData } from "../data/data";
-import bgImage from "../../../public/assets/images/computer-program-coding-screen.jpg";
+import { featuresData } from "../../data/data";
+import bgImage from "../../../../public/assets/images/computer-program-coding-screen.jpg";
 
 
 

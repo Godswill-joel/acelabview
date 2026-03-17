@@ -9,18 +9,18 @@ import { usePathname } from "next/navigation"
 
 const navlinks = [
   { name: "Home", path: "/" },
-  { name: "Courses", path: "/course", 
+  { name: "Courses", path: "/Page/course", 
     children: [
-    { name: "Marine Electrical courses", path: "/marineElectricalTraining" },
-    { name: "IT Courses", path: "/course" },
+    { name: "Marine Electrical courses", path: "/Page/marineElectricalTraining" },
+    { name: "IT Courses", path: "/Page/course" },
     
   ],  },
-  { name: "About", path: "/about" },
+  { name: "About", path: "/Page/about" },
   { 
     name: "Contact", 
-    path: "/contact", 
+    path: "/Page/contact", 
   },
-  { name: "Blog", path: "/blog" }
+  { name: "Blog", path: "/Page/blog" }
 ];
 
 export default function NavBar() {
@@ -93,7 +93,7 @@ export default function NavBar() {
               ))}
             </ul>
             <Button
-              onClick={() => handleNavClick('/contact')}
+              onClick={() => handleNavClick('/Page/contact')}
               className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold transition-colors"
               size="lg"
             >

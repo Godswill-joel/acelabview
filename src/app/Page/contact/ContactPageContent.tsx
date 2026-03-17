@@ -9,7 +9,7 @@ import { selection } from "@/app/data/data";
 import { Button } from "@/app/components/Button";
 import { useSearchParams } from "next/navigation";
 import { Pop, Float } from "@/app/style/animation";
-import hero from "../../../public/assets/images/Hero.jpeg";
+import hero from "../../../../public/assets/images/Hero.jpeg";
 import { FaPhone, FaSpinner, FaEnvelope, FaWhatsapp, FaFacebookF, FaInstagram, FaLocationDot, FaLinkedinIn, FaSquareXTwitter } from "react-icons/fa6";
 
 type LinkKey = "club";

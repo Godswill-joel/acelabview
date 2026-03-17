@@ -3,9 +3,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { courses } from "../data/data";
-import { Button } from "../components/Button";
-import { marineCourseTopics } from "../data/data";
+import { courses } from "../../data/data";
+import { Button } from "../../components/Button";
+import { marineCourseTopics } from "../../data/data";
 
 export default function CoursesSection() {
   const [search, setSearch] = useState("");

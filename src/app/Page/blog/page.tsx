@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { techBlogs } from "../data/data";
-import { Button } from "../components/Button";
+import { techBlogs } from "../../data/data";
+import { Button } from "../../components/Button";
 import { Calendar, User, Cpu } from "lucide-react";
-import hero from "../../../public/assets/images/WhatsApp Image 2025-10-14 at 15.12.37.jpeg";
+import hero from "../../../../public/assets/images/WhatsApp Image 2025-10-14 at 15.12.37.jpeg";
 
 export default function BlogPage() {
   const [email, setEmail] = useState("");

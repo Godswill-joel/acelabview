@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import back from "../../../public/assets/images/cyber-security-concept-digital-art.jpg";
-import { testimonialImages } from "../data/data";
+import back from "../../../../public/assets/images/cyber-security-concept-digital-art.jpg";
+import { testimonialImages } from "../../data/data";
 
 export default function PlacementAndTestimonial() {
   return (

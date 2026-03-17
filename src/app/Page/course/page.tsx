@@ -4,13 +4,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { courses } from "../data/data";
-import NavBar from "../components/NavBar";
+import { courses } from "../../data/data";
+import NavBar from "../../components/NavBar";
 import { useRouter } from "next/navigation";
-import { Button } from "../components/Button";
+import { Button } from "../../components/Button";
 import { Float } from "@/app/style/animation";
-import hero from "../../../public/assets/images/Hero.jpeg";
-import CourseModal from "../course/model/CourseOutlineModal";
+import hero from "../../../../public/assets/images/Hero.jpeg";
+import CourseModal from "./model/CourseOutlineModal";
 
 export default function CoursesPage() {
   const [search, setSearch] = useState("");

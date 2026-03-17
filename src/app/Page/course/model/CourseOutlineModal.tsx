@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "../../components/Button";
+import { Button } from "../../../components/Button";
 
 interface CourseModalProps {
   course: {
@@ -77,7 +77,7 @@ export default function CourseModal({ course, isOpen, onClose, onEnroll }: Cours
             </h3>
 
             <p className="text-gray-700 leading-relaxed whitespace-pre-line">
-              {course.description}
+              . {course.description}
             </p>
           </>
         )}

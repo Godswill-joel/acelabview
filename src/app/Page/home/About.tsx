@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Button } from "../components/Button";
-import { values } from "../data/data";
+import { Button } from "../../components/Button";
+import { values } from "../../data/data";
 
 export default function AboutSection() {
   return (

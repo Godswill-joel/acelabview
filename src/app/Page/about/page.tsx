@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import NavBar from "../components/NavBar";
+import NavBar from "../../components/NavBar";
 import { Float } from "@/app/style/animation";
-import hero from "../../../public/assets/images/Hero.jpeg";
-import team from "../../../public/assets/images/About.jpeg";
+import hero from "../../../../public/assets/images/Hero.jpeg";
+import team from "../../../../public/assets/images/About.jpeg";
 
 export default function About() {
   return (

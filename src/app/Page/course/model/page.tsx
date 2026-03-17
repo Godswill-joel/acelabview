@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { courses } from "@/app/data/data";
-import CourseModal from "../model/CourseOutlineModal";
+import CourseModal from "./CourseOutlineModal";
 
 export default function OutlinePage({ params }: { params: { slug: string } }) {
   const { slug } = params;

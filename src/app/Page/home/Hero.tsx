@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "../components/Button";
+import { Button } from "../../components/Button";
 import { Oregano } from "next/font/google";
 
 const oregano = Oregano({
@@ -56,7 +56,7 @@ export default function HomePage() {
 
             {/* Center button on mobile */}
             <div className="flex justify-center md:justify-start">
-              <Link href="/contact">
+              <Link href="/Page/contact">
                 <Button
                   className="bg-[#2661E9] hover:bg-[#1a4bb8] text-white font-bold transition-colors"
                   size="lg"
