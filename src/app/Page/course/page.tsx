@@ -34,7 +34,7 @@ export default function CoursesPage() {
 
   const handleEnroll = () => {
     if (selectedCourse) {
-      router.push(`/contact?course=${encodeURIComponent(selectedCourse.title)}`);
+      router.push(`/Page/contact?course=${encodeURIComponent(selectedCourse.title)}`);
     }
   };
 
@@ -187,7 +187,7 @@ export default function CoursesPage() {
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
             Our team will help you find the best course to match your goals.
           </p>
-          <Link href="/contact">
+          <Link href="/Page/contact">
             <Button className="px-8 ml-auto mr-auto py-3 bg-[#2661E9] text-white font-semibold rounded-full hover:bg-white hover:text-[#2661E9] transition">
               Contact Us
             </Button>

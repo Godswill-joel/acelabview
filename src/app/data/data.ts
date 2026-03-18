@@ -41,7 +41,7 @@ export const courses = [
         instructor: "Sarah Mitchell",
         instructorImage: "/instructors/sarah.jpg",
         months: 3,
-        price: 250000,
+        price: 200000,
         oldPrice: 300000,
         image: Frontend,
         outline: [
@@ -75,7 +75,7 @@ export const courses = [
         instructor: " Wisdom Chimeruchem",
         instructorImage: "/instructors/liam.jpg",
         months: 6,
-        price: 300000,
+        price: 200000,
         oldPrice: 600000,
         image: DataAnalysis,
         outline: [
@@ -111,7 +111,7 @@ export const courses = [
         instructor: "Godswill Emmanuel ",
         instructorImage: "/instructors/emma.jpg",
         months: 4,
-        price: 250000,
+        price: 200000,
         oldPrice: 400000,
         image: Graphics,
         outline: [
@@ -144,7 +144,7 @@ export const courses = [
         instructor: "Success Chukwu",
         instructorImage: "/instructors/emma.jpg",
         months: 6,
-        price: 300000,
+        price: 200000,
         oldPrice: 700000,
         image: Cybersecurity,
         outline: [
@@ -178,7 +178,7 @@ export const courses = [
         instructor: "Amadi Dominic ",
         instructorImage: "/instructors/emma.jpg",
         months: 4,
-        price: 300000,
+        price: 200000,
         oldPrice: 650000,
         image: Backend,
         outline: [
@@ -212,7 +212,7 @@ export const courses = [
         instructor: " Nneoma Pamella",
         instructorImage: "/instructors/emma.jpg",
         months: 3,
-        price: 250000,
+        price: 200000,
         oldPrice: 500000,
         image: Devops,
         outline: [

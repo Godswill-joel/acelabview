@@ -162,7 +162,7 @@ export default function MarineCourses() {
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
           onEnroll={() =>
-            router.push(`/contact?course=${encodeURIComponent(selectedCourse?.title)}`)
+            router.push(`/Page/contact?course=${encodeURIComponent(selectedCourse?.title)}`)
           }
         />
       </section>

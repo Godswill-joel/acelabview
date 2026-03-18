@@ -51,7 +51,7 @@ export default function CoursesSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {filteredCourses.map((course) => {
             const isMarine = marinePreview.some(m => m.id === course.id);
-            const link = isMarine ? "/marineElectricalTraining" : "/course";
+            const link = isMarine ? "/Page/marineElectricalTraining" : "/Page/course";
             const imageSrc = course.image ?? course.images ?? "/assets/images/hero4.png";
             return (
               <div
