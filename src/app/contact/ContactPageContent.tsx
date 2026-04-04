@@ -11,7 +11,7 @@ import { Button } from "@/app/components/Button";
 import { useSearchParams } from "next/navigation";
 import { Pop, Float } from "@/app/style/animation";
 import Loading from "@/app/components/Loading";
-import hero from "../../../../public/assets/images/Hero.jpeg";
+import hero from "../../../public/assets/images/hero4.png";
 import {
   FaPhone, FaSpinner, FaEnvelope, FaWhatsapp,
   FaFacebookF, FaInstagram, FaLocationDot,

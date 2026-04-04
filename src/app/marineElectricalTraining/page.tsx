@@ -5,8 +5,8 @@ import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "../components/Button";
-import CourseModal from "../course/model/CourseOutlineModal"
-import Hero4 from "../../../../public/assets/images/hero4.png";
+import CourseModal from "../course/model/CourseOutlineModal";
+import Hero4 from "../../../public/assets/images/hero4.png";
 
 import {
   marineCourseTopics,

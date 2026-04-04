@@ -12,7 +12,7 @@ import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/app/firebase/firebase";
 import Loading from "@/app/components/Loading";
 import CourseModal from "./model/CourseOutlineModal";
-import hero from "../../../../public/assets/images/Hero.jpeg";
+import hero from "../../../public/assets/images/Hero.jpeg";
 
 export default function CoursesPage() {
   const [search, setSearch] = useState("");
