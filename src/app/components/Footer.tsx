@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Button } from "./Button";
 import acelabview from "../../../public/assets/images/ACELogo2.png";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaSquareXTwitter } from "react-icons/fa6";
-import Credentials from "../Page/credentials/page";
+import Credentials from "../credentials/page";
 
 export default function Footer() {
     const socialLinks = [
@@ -17,10 +17,10 @@ export default function Footer() {
     ];
     const navlinks = [
         { name: "Home", path: "/" },
-        { name: "Courses", path: "/Page/course" },
-        { name: "About", path: "/Page/about" },
-        { name: "Contact", path: "/Page/contact" },
-        { name: "Blog", path: "/Page/blog" },
+        { name: "Courses", path: "/course" },
+        { name: "About", path: "/about" },
+        { name: "Contact", path: "/contact" },
+        { name: "Blog", path: "/blog" },
     ];
 
     const linkGroups = [
@@ -31,9 +31,9 @@ export default function Footer() {
         {
             title: "Company",
             links: [
-                { name: "About Us", path: "/Page/about" },
-                { name: "Career", path: "/Page/course" },
-                { name: "Customers", path: "/Page/contact" },
+                { name: "About Us", path: "/about" },
+                { name: "Career", path: "/course" },
+                { name: "Customers", path: "/contact" },
             ],
         },
     ];

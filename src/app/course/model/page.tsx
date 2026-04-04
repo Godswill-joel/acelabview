@@ -17,7 +17,7 @@ export default function OutlinePage({ params }: { params: { slug: string } }) {
       isOpen={true} 
       onClose={() => router.back()}
       onEnroll={() =>
-        router.push(`/Page/contact?course=${encodeURIComponent(course.title)}`)
+        router.push(`/contact?course=${encodeURIComponent(course.title)}`)
       }
     />
   );

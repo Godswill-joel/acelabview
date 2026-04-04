@@ -1,7 +1,7 @@
 
-import Home from "./Page/home/Home";
+import Home from "./home/Home";
 
-export default function Pge() {
+export default function Page() {
   return (
    <Home />
   );

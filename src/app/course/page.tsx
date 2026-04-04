@@ -4,9 +4,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import NavBar from "../../components/NavBar";
+import NavBar from "../components/NavBar";
 import { useRouter } from "next/navigation";
-import { Button } from "../../components/Button";
+import { Button } from "../components/Button";
 import { Float } from "@/app/style/animation";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/app/firebase/firebase";
@@ -49,7 +49,7 @@ export default function CoursesPage() {
 
   const handleEnroll = () => {
     if (selectedCourse) {
-      router.push(`/Page/contact?course=${encodeURIComponent(selectedCourse.title)}`);
+      router.push(`/contact?course=${encodeURIComponent(selectedCourse.title)}`);
     }
   };
 
@@ -234,7 +234,7 @@ export default function CoursesPage() {
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
             Our team will help you find the best course to match your goals.
           </p>
-          <Link href="/Page/contact">
+          <Link href="/contact">
             <Button className="px-8 ml-auto mr-auto py-3 bg-white font-semibold rounded-full transition"
               style={{ color: accent }}>
               Contact Us

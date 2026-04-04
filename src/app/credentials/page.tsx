@@ -1,9 +1,9 @@
 
 import Image from "next/image";
-import ITF from "../../../../public/assets/images/ITF.png";
-import FMOLP from "../../../../public/assets/images/FMOLP.png";
-import nabteb from "../../../../public/assets/images/nabteb.png";
-import Unitest from "../../../../public/assets/images/Unitest.png";
+import ITF from "../../../public/assets/images/ITF.png";
+import FMOLP from "../../../public/assets/images/FMOLP.png";
+import nabteb from "../../../public/assets/images/nabteb.png";
+import Unitest from "../../../public/assets/images/Unitest.png";
 
 const credentials = [
   {

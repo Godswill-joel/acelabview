@@ -4,7 +4,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Button } from "../../components/Button";
+import { Button } from "../components/Button";
 import CourseModal from "../course/model/CourseOutlineModal"
 import Hero4 from "../../../../public/assets/images/hero4.png";
 
@@ -12,7 +12,7 @@ import {
   marineCourseTopics,
   automationControl,
   troubleShooting
-} from "../../data/data";
+} from "../data/data";
 
 export default function MarineCourses() {
   const router = useRouter();
@@ -162,7 +162,7 @@ export default function MarineCourses() {
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
           onEnroll={() =>
-            router.push(`/Page/contact?course=${encodeURIComponent(selectedCourse?.title)}`)
+            router.push(`/contact?course=${encodeURIComponent(selectedCourse?.title)}`)
           }
         />
       </section>

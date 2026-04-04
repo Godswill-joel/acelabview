@@ -3,9 +3,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { courses } from "../../data/data";
-import { Button } from "../../components/Button";
-import { marineCourseTopics } from "../../data/data";
+import { courses } from "../data/data";
+import { Button } from "../components/Button";
+import { marineCourseTopics } from "../data/data";
 
 export default function CoursesSection() {
   const [search, setSearch] = useState("");
@@ -51,7 +51,7 @@ export default function CoursesSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {filteredCourses.map((course) => {
             const isMarine = marinePreview.some(m => m.id === course.id);
-            const link = isMarine ? "/Page/marineElectricalTraining" : "/Page/course";
+            const link = isMarine ? "/marineElectricalTraining" : "/course";
             const imageSrc = course.image ?? course.images ?? "/assets/images/hero4.png";
             return (
               <div

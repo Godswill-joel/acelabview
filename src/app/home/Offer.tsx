@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { Check } from "lucide-react";
-import { features } from "../../data/data";
-import { Button } from "../../components/Button";
-import studentImg from "../../../../public/assets/images/Student.png"
+import { features } from "../data/data";
+import { Button } from "../components/Button";
+import studentImg from "../../../public/assets/images/Student.png"
 
 
 

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import NavBar from "../../components/NavBar";
+import NavBar from "../components/NavBar";
 import { Float } from "@/app/style/animation";
 import { useEffect, useState } from "react";
 import { doc, getDoc } from "firebase/firestore";
