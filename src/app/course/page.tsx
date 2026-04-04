@@ -172,6 +172,8 @@ export default function CoursesPage() {
                         <Image
                           src={course.image}
                           alt={course.title}
+                          width={400} 
+                          height={224}
                           className="w-full h-56 object-cover"
                         />
                       ) : (
